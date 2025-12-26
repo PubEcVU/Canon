@@ -1,0 +1,17 @@
+---
+# EBE CANON PUBLIC ECONOMICS
+# Social Security and Pensions   
+# shift section number
+number-offset: 5
+date: January 22, 2026
+title: "Social Security and Pensions"
+title-slide-attributes:
+    data-background-opacity: "0.0"
+subtitle: "EBE Canon Public Economics"
+format:
+  revealjs:
+    width: 90%
+    height: 800
+---
+
+{{< include _pe_ebe_canon_slides_6.qmd >}}

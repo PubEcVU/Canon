@@ -1,0 +1,749 @@
+# Risk, (Social) Insurance, and Adverse Selection {background-color="#049baa"}
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Social Insurance {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Social Insurance Institutions  {.smaller}
+
+::::: {.panel-tabset}
+
+#### Overview I
+
+* most OECD countries, and increasing numbers of low and middle-income countries have a web of social insurances to buffer income loss or encourage saving 
+* there is a large heterogeneity among those systems, sometimes they are integrated to some degree
+* in many, but not all countries, they are public insurances, and if they are private they tend to be highly regulated
+* public insurances, but also publicly regulated private insurances often have a participation mandate: individuals are required to pay contributions
+* many social insurances are work-related and do not pay benefits after retirement
+* excellent source of information for institutional comparison: OECD.
+* social insurance benefits are a major part of social expenditure, which in turn is a major part of total gov't expenditure, see tab Overview II
+* some of the most important on tab Overview III
+
+#### Overview II
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/12568872"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+#### Overview III
+
++ Unemployment Insurance (UI)
+    - benefits after (involuntary) job loss; limited duration; often related to previous earnings, mostly capped (or with a floor)
++ Health Insurance (HI)
+    - covers health expenses (treatment, hospitalization, medication) upon medical conditions (diseases, accidents), often strongly regulated
++ Sickness Insurance (SI)
+    - covers income loss from work-related or work-impairing conditions (e.g., accidents), often involving employer
++ Disability Insurance (DI)
+    - in case of chronic illnesses or disabilities, often with reintegration to regain work capacity; else: pre-pension until old age
++ Old age retirement pensions
+    - life-cycle related savings-for-retirement plans that lock up accumulated funds until a retirement date and pay an annuity until the end of life ("longevity insurance")
+
+#### UI
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+* typical eligibility requirements: 
+    + involuntary job loss (layoffs, firm closure)
+    + age restrictions, non-retired
+    + length of contribution history
+* often associated with
+    + job search requirements and/or activation programs  
+:::
+
+::: {.column width="50%"}
+* typical benefit parameters
+    + potential benefit duration
+    + benefit levels (relative to earnings: replacement rate)
+    + sometimes gradation of benefits with duration
+* large role in macroeconomic automatic stabilization
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+```{=html}
+<iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1BOBS&width=1250px&height=270px" scrolling="no" frameborder="0" style="overflow:hidden; width:1250px; height:325px;" allowTransparency="true" loading="lazy"></iframe>
+```
+
+
+#### HI
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+* often designed to guarantee universal access to health care
+* contributions
+    + uniform
+    + earnings-related
+    + employer-sponsored
+* payment in-kind (treatment and medication) or reimbursement-based
+
+
+* picture: OECD total Health Spending/GDP, 1970-2022
+:::
+
+::: {.column width="50%"}
+* parameters to control overconsumption
+    + gatekeeper function of GP before specialist consult or hospital admission
+    + supply restrictions for specialist visits (e.g. number of treatments) and medication (approved list or managed list)
+    + (annual) deductible
+    + co-payments (amount) or co-insurance (percentage)
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+```{=html}
+<iframe src="https://data.oecd.org/chart/7dfL" width="1250" height="238" style="border: 0" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true"><a href="https://data.oecd.org/chart/7dfL" target="_blank">OECD Chart: Health spending, Total, % of GDP, Annual, 1970 – 2022</a></iframe>
+```
+
+#### SI
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+* HI does not cover income loss, SI does
+* typical eligibility requirements: 
+    + screening and approval by company doctor
+    + minimum length of sickness / long-term incapacity to work
+* often associated with
+    + rehabilitation and work-reintegration programs  
+    + precursor to DI (permanent disability)
+:::
+
+::: {.column width="50%"}
+* typical benefit parameters
+    + often limited benefit duration (else: disability)
+    + level of benefits (absolute, or relative to earnings: replacement rate)
+* contributions
+    + often employer-sponsored
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+#### DI
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* DI covers workers becoming disabled
+* typical eligibility requirements: 
+    + if applicable: expired SI benefits
+    + screening and approval by DI doctor
+    + periodic reassessments and reapproval
+* often associated with
+    + determination of degree of work capacity
+    + labor market reintegration programs  
+    + successor to SI (temporary incapacity)
+* typical benefit parameters
+    + often benefit eligibility and level depend on degree of remaining capacity to work
+* role of employers
+    + responsiblity to accommodate reintegration inside or outside the firm
+
+:::
+
+::: {.column width="50%"}
+
+![](images/OECD_DI.jpg)
+
+[source: OECD](https://www.oecd-ilibrary.org/docserver/227e7990-en.pdf?expires=1697194129&id=id&accname=guest&checksum=43265B6AD7C9925D9D0106833CF58F35)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+
+
+#### Old Age
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="33.3%"}
+
+##### overview
+
+* main idea: help consumption smoothing over the life-cycle when working is not an option anymore
+* most pension systems pay an annuity (constant income stream) to the worker after retirement until the end of life
+* often, they also cover non-workers (state pension) aiming to limit poverty
+* sometimes they cover non-working spouses or survivors (widow/ers)
+* distinguish: voluntary/mandatory participation
+* distinguish: occupational/state pension
+
+:::
+
+::: {.column width="66.7%"}
+##### finance models
+
+* pay-as-you-go: current workers pay the income of current retirees (social model)
+* capital funded system: current workers save to build up capital that is disbursed to them or their generation; money is invested in market (risky!)
+    + defined benefit: 
+        - contributions vary, aiming to target a particular benefit level (replacement rate relative to career income)
+        - risk is with workers, less with pensioners
+        - there are often elements of redistribution and pooled premium determination
+    + defined contribution:
+        - contributions fixed, benefit levels vary
+        - risk is with pensioners, less with workers
+        - in the limit, can be fully individualized (individual retirement accounts)
+        - high portability between jobs
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Some Critical Questions
+
+* why is there so much government involvement?
+    + where is the market failure?
+    + what are the distributional issues?
+    + how do private insurance market work?
+    + how do they deal with risk?
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Risk & Expected Utility {background-color="#acfaf7"}
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Risk Attitudes
+
+::::: {.panel-tabset}
+
+#### Fair Bet
+
+* different people have different attitudes to risk: some try to avoid or shun any risk, others don't care, others enjoy it
+* risk attitude is a preference attribute, expressed by considering the willingness to accept a *fair bet*
+$$
+\left. \begin{array}{rl} \text{risk averse:} & \text{unwilling} \\ \text{risk neutral:} & \text{indifferent} \\ \text{risk loving:} & \text{willing}  \end{array} \right\} \text{to make a fair bet}
+$$
+* a **fair bet** is an uncertain prospect with a known set of possible outcomes and a known set of associated probabilities that sum to one (a pure random event); the expected value of the fair bet is zero
+
+#### Risk Attitude
+
+* consider a risky prospect $X$ such as income or wealth (not necessarily a fair bet): this is a random variable with realizations $x$; consider a utility function $u(x)$, measuring the satisfaction derived from the outcome $x$
+    + risk attitude is reflected in the shape of the utility function
+    $$
+    \left. \begin{array}{r} \text{risk averse}  \\ \text{risk neutral}  \\ \text{risk loving}  \end{array} \right\} u \text{ is }
+    \left\{ \begin{array}{l} \text{concave} \\ \text{linear} \\ \text{convex}  \end{array} \right.
+    $$
+* for concavity/convexity, the second derivative of the utility function is interesting
+![](images/raverse.jpg)
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Expected Utility, I
+
+::::: {.panel-tabset}
+
+#### Definition
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="43%"}
+
+consider a discrete r.v.\ $X$ and $S$ different possible outcomes with associated probabilities $\pi_s, s=1,\ldots,S$, then the expected value (E.V.) of $X$ is $$\text E X = \sum_{s=1}^S \pi_s \cdot x_s$$ the **expected utility** is the E.V. of utility
+  $$\text E u(X) = \sum_{s=1}^S \pi_s \cdot u(x_s)$$
+
+:::
+
+::: {.column width="57%"}
+
+
+|  $s$  | $\pi_s$ | $x_s$     | $u(x_s)=\sqrt{x_s}$ |
+|-------|---------|----------:|-----:|
+|   1   |  0.90   |  160,000  |  400   
+|   2   |  0.06   |   90,000  |  300
+|   3   |  0.03   |   40,000  |  200
+|   4   |  0.01   |   10,000  |  100
+| E.V.  |         |  150,700  |  385
+
+<br>
+
+<br>
+
+* expected values are fixed numbers ($X$ varies, but $\text E (X)$ or $\text E u(X)$ does not)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### Risk Attitude
+* risk attitude is reflected in the relation between the expected utility of $X$ and the utility of $\text{E}(X)$
+$$\begin{array}{rc} \text{risk averse:} &  u(\text{E}(X))>\text{E}(u(X)) \\ \text{risk neutral:} & u(\text{E}(X))=\text{E}(u(X)) \\ \text{risk loving:} & u(\text{E}(X))<\text{E}(u(X)) \end{array}$$
+* to a risk averse agent, the utility of the sure thing $\text E (X)$ is worth more in utility terms than the expected utility of the uncertain prospect $X$, $\text{E}(u(X))$
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Expected Utility, II
+
+::::: {.panel-tabset}
+
+#### Risk Premium
+
+* risk averse agents willing to pay **risk premium** (RP) so as to avoid playing the fair bet
+* risk loving agents have a negative risk premium (they pay to play)
+* risk neutral agents' RP is zero 
+* RP: difference between $\text E(X)$ and the **certainty-equivalent** outcome $x_c$ (see next tab)
+
+#### Certainty Equivalent
+
+* utility at the certainty equivalent outcome $x_c$, $u(x_c)$, equals expected utility of $X$
+  $$u(x_c) = \text E u(X)$$
+* apply the inverse transformation on $u$,
+  $$x_c = u^{-1} (\text E u(X))$$
+* if $X$ is discrete and all $S$ values are equally likely
+  $$x_c = u^{-1} \left(\frac{1}{S} \sum_s u(X_s)\right)$$
+
+#### Illustration
+
+![](images/eupic.png){width="50%"}
+
+::: {.callout-important icon="false" title="We bring this to life in class."}
+:::
+
+#### Math
+
+Quantitative measures of risk aversion, due to [Kenneth Arrow]{.smallcaps} and [John W.\ Pratt]{.smallcaps}
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* absolute risk aversion
+$${\cal A}(X) \equiv - \frac{u''(X)}{u'(X)}$$
+     + the decisionmaker considers the absolute exposure to risk (say, the number of dollars that can be invested in a risky as opposed to a safe asset);
+:::
+
+::: {.column width="50%"}
+
+* relative risk aversion
+$${\cal R}(X)   \equiv - X\cdot\frac{u''(X)}{u'(X)}  = X\cdot {\cal A}(X)$$
+     + the decisionmaker considers the relative exposure to risk (say, the fraction of wealth invested in a risky as opposed to a safe asset)
+
+:::
+
+::::
+<!-- end of multicolumn setup ................................................ -->
+
+#### Special Cases
+
+utility functions for which risk aversion stays constant with a change of wealth $X$
+
+* CARA: constant absolute risk aversion, parameter $\alpha\ge 0$
+  $$u(X) = -\frac{1}{\alpha} \exp(-\alpha \cdot X)$$
+* CRRA: constant relative risk aversion, parameter $\rho\ge 0$
+  $$
+  \begin{eqnarray*}
+  u(X) &=& \frac{X^{1-\rho}-1}{1-\rho},\quad \rho\neq 1 \\
+        &=& \ln(X), \quad \qquad \! \rho=1
+  \end{eqnarray*}
+  $$
+
+
+:::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Insurance {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Insurance Market
+
+::::: {.panel-tabset}
+
+#### Demand for Insurance
+
+* risk aversion implies there is demand for insurance (positive risk premium)
+* insurance contract: transfers financial risk from insuree to insurer
+    + insurance contract: specifies parameters such as
+        - premium: price paid by insuree
+        - indemnity/coverage: amount insurer pays to insuree in case of loss/damage
+        - deductible: insuree's uninsured amount, 'own risk'
+        - coinsurance: %age of loss borne by the insuree
+* with [actuarially fair]{.alert} insurance  ('fair bet'), risk averse agents want to sign insurance contract that  obliges them to pay a premium in exchange for having the monetary consequences of a risk *fully* covered
+
+#### Contract & Pricing
+
+contract &hellip;
+
+* **actuarially fair**: premium based purely on probability distribution of insured risk (no administration costs of insurance) = total expected loss divided by number of contracts signed
+* **loading**: premium also reflects e.g., administration cost of processing insurance claims (load: cost mark-up)
+* [full]{.alert} insurance: contract replaces risky prospect $X$ with its expected value, $\text{E}(X)$
+    + full insurance covers entire loss, partial insurance does not (indemnity < loss)
+
+#### Insurer
+
+* typically risk neutral
+* signs similar contracts with many people whose individual risks are independent
+* calculates expected loss (possibly including load) as sample average over all contracts
+* under perfect competition in insurance industry, insurer makes zero profit
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Insurance Illustrated
+
+::::: {.panel-tabset}
+
+#### 1
+
+![](images/ins1.jpg){width="90%"}
+
+#### 2
+
+![](images/ins2.jpg){width="90%"}
+
+#### 3
+
+![](images/ins3.jpg){width="90%"}
+
+#### 4
+
+![](images/ins4.jpg){width="90%"}
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Insurance Market Problems
+
+1. macro shocks: if everyone in the insured population gets hit by the same shock, then the funds available for the insurer to pay out will not be sufficient to honor all claims (see US UI claims 3/2020); insurance typically works if insured risks are independent (or at least not strongly positively correlated)
+2. asymmetric information: the insuree knows more about relevant facts than the insurer 
+
+public insurance (that cannot go bust) can justify 1., 2. affects all insurers (public or private)
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Asymmetric Information {background-color="#acfaf7"}
+
+
+### Two Main Types of Asymmetric Information Problems
+
+::::: {.panel-tabset}
+
+#### Health Insurance Example
+
+a. customer chooses his health behavior after signing a contract
+
+   + insurance cover does not provide incentive to take care: ex-ante **moral hazard**
+   + insurance cover incentivizes to choose expensive treatment: ex-post **moral hazard**
+
+b. customer knows about his family's history of diseases before signing a contract
+
+   average premium leads to **adverse selection**: the good risks choose not to sign the contract
+
+* empirically, adverse selection and moral hazard hard to distinguish: both imply positive correlation of being insured and experiencing bad health
+
+#### Ex Ante Moral Hazard
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](images/mha.jpg){width="95%"}
+
+:::
+
+::: {.column width="30%"}
+
+* initial wealth: 110
+* loss: 50
+* premium: 10
+* coverage: 100%
+
+* important (but not shown): ex ante cost of preventive effort to keep probability at 10% rather than 30%
+
+:::
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+#### Ex Post Moral Hazard
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="60%"}
+
+![](images/mhp.jpg){width="95%"}
+
+:::
+
+::: {.column width="40%"}
+
+* initial wealth: 110
+* loss: 50
+* premium: 10
+* coverage: 100%
+
+* important: ex post claim (60) exceeds suffered loss 
+* abstracting from cost of preventive effort, loss probability stays at 10%
+
+:::
+
+::::
+
+
+#### Adverse Selection
+
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](images/as.jpg){width="95%"}
+
+:::
+
+::: {.column width="30%"}
+
+* initial wealth: 110
+* loss: 50
+* premium: 10
+* coverage: 100%
+
+* important: 2 Customer types with inherently different loss probabilities (10% v 30%) 
+* Insurer only knows that there are 2 types, and their distribution (e.g., 50:50), offers one-size-fits-all contract (pooling)
+
+:::
+
+::::
+
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Adverse Selection Out of Insurance Pooling Contract
+
+* **pooling:** same insurance contract offered to all customers
+* competitive insurance markets (many firms) where actuarially fair insurance (based only on expected risk) is offered
+* but: individual probabilities to incur losses **differ** in the population (different types)
+* informational asymmetry: customer knows his personal probability but insurer only knows distribution of these probabilities
+* individual purchases policy only if premium $\le$ his expected loss
+* one-size-fits-all premium implies: for some, this is a bad deal
+* low-risk people will not sign the contract (adverse selection)
+* premium$\uparrow$ $\quad\to\quad$ reinforces adverse sel.\ $\quad\to\quad$ vicious circle
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Adverse Selection in Price-Quantity Diagram 
+#### Einav & Finkelstein (2011, JEP)
+
+* every consumer buys or does not buy 1 insurance contract; $Q$: aggregate # contracts
+* heterogeneity in loss probability: some have higher loss probability than others
+* heterogeneity in risk premium: some are prepared to pay more than others
+* positive correlation between the two: those who have the highest willingness to pay for insurance are those who are expected to be the most costly for the insurer to cover
+* downward sloping demand curve for insurance: the first customers have highest willingness to pay, the last ones zero (or some other, low value)
+* marginal cost $MC$ curve of insurer downward sloping
+* average cost $AC$ curve of insurer lies above $MC$ (also downward sloping)
+* break-even point (equilibrium) insurers: $D=AC$
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Adverse Selection in Price-Quantity Diagram
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/daedf3834d?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+```
+
+:::
+
+::: {.column width="40%"}
+
+* heterogeneity in risk types at the base of selection:
+    + high risk = high MC to insurer
+    + high risk with high marginal willingness to pay (MC $\to$ demand)
+* possibly: heterogeneity in risk attitude (MC not parallel to demand)
+* some may be inefficiently uninsured
+* loads: shift MC, AC, not demand
+* some may be efficiently uninsured
+* mandate can flip this around
+:::
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+<!-- ** NEW SLIDE ********************************************************* -->
+### Market Unravelling in Price-Quantity Diagram
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* complete market unravelling ($Q_{\text{eq}} \to 0$) possible ("Death Spiral of Adverse Selection")
+* extreme outcome: no insurance in market equilibrium at all,  Akerlof's (1970) lemon principle
+* depends on exact location of $MC$ and $D$
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/unravel.png)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Moral Hazard
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* assume no (adverse) selection (no heterogeneity in risk probabilities)
+    +  MC and AC curves are flat and identical
+* MC$_{unins}$ shows the MC (AC) curve for the case that consumers are uninsured, MC$_{ins}$ is for the same customers that are insured
+    + uniform increase in risk probability due to being insured
+    + vertical difference measures equilibrium price response to moral hazard
+
+:::
+
+
+::: {.column width="50%"}
+
+![](images/mhazard.png)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Policy Options 
+
+* [loading]{.alert}: contract admin costs shift up MC & AC without shifting demand
+    + despite risk aversion, some people [don't want]{.alert} insurance
+
+#### Mandate
+
+* a mandate breaks the vicious death spiral of adverse selection
+    + can lead to lower prices, and higher consumer surplus
+* it makes those worse off that are forced to pay more than what they value it for
+    + countervailing effect on welfare loss
+    + need SWF to weigh losers and gainers
+
+#### Subsidy
+
+* a subsidy can restore the effect of loading
+    + similar to: approach of [Pigou]{.smallcaps} taxes/subsidies
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Conclusions {background-color="#acfaf7" .unnumbered}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Social Insurance Mandate
+
+::::: {.panel-tabset}
+
+#### Mandate
+
+A mandate (obligation to participate) is used in social insurances for the following reasons:
+
+* combat adverse selection
+* equality of access
+* enforce solidarity
+    + risk solidarity
+    + income solidarity
+* combat commitment problems
+
+#### Adv Selection
+
+* see the previous analysis
+    + mandates break the death spiral of adverse selection, leading to lower prices
+    + increasing affordability & equality of access
+    + may force people into insurance that don't want it
+* trade-off: use SWF to choose
+
+#### Solidarity
+
+* efficient pricing may entail pricing different risks differentially
+* mandated insurance can do without efficient pricing
+
+##### Risk Solidarity
+
+* abandons or mitigates differentiation so that the worse risks are not confronted with the full cost they cause
+* may forego moral-hazard-limiting benefits of co-insurance or deductible
+
+##### Income Solidarity
+
+* links premiums paid to income, without risk-related reason
+* mandated system helps to redistribute outside the tax system (vertical equity)
+
+#### Commitment
+
+* psychological aspect: many people cannot effectively commit to a good plan of action that is in their own best interest
+    + e.g. voluntary retirement savings
+* mandated participation makes non-commitment a non-issue
+
+::::: 
+
+
+### Summary
+
+::::: {.panel-tabset}
+
+#### Theory
+
+* expected utility theory models rational decisionmaking under risk
+    + known and complete set of outcomes
+    + known (or presumed) set of probabilities
+* risk aversion as canonical preference description, positively associated with
+    + concavity of utility ($u''<0$) and risk premium $>0$
+* risk averse individuals have demand for insurance
+* insurance redistributes from the lucky to the not-so-lucky
+* prime insurance market failure surface under asymmetric information
+    + adverse selection (in the extreme: 'death spiral')
+    + moral hazard
+
+#### Policy
+
+* gov’t regulation or public insurance needs to be justified (market failure)
+* social insurances use mandates to break adverse selection, to enforce solidarity, and to protect people from themselves
+* social insurance systems with mandatory participation:
+     + avoid premium-inflating adverse selection
+     + insufficient forward-lookingness (parternalism/merit good)
+     + however: also insure those that otherwise would not want to be insured
+* UI limited duration and extent of benefit
+     + reduce *moral hazard*
+* redistributive element of social insurance
+     + aims at equity or equality     
+
+:::::

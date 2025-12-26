@@ -1,0 +1,9 @@
+---
+# EBE CANON PUBLIC ECONOMICS
+# Effcient Allocation of Public Goods   
+# shift section number
+number-offset: 2
+title: "Effcient Allocation of Public Goods"
+---
+
+{{< include _pe_ebe_canon_slides_3.qmd >}}

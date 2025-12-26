@@ -1,0 +1,9 @@
+---
+# EBE CANON PUBLIC ECONOMICS
+# Social Optimality: First Best versus Second Best  
+# shift section number
+number-offset: 0
+title: "Social Optimality:<br> First Best versus Second Best"
+---
+
+{{< include _pe_ebe_canon_slides_1.qmd >}}

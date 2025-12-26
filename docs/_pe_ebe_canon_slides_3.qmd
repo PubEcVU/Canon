@@ -1,0 +1,494 @@
+### Prerequisites and Resources
+
+#### Prerequisites
+
+before watching this video, users should be familiar with the following concepts
+
+* Allocative efficiency in a production economy
+
+#### Resources and recommended reading
+
+Varian and Melitz, Intermediate Microeconomics, 10th ed., W.W. Norton: ch. 36
+
+Hindriks and Myles, Intermediate Public Economics, 2nd ed., MIT Press: ch. 6
+
+Diagrams in this Set of Slide Decks: `https://edu.nl/bybqa`
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+### Extension to Production
+
+#### Beyond Static Endowments
+
+* taking into account production of goods $x$ and $y$, scarcity of inputs to production suggests two things:
+    + given input quantities, there is a trade-off between production of $x$ and production of $y$
+        - this is embodied in the notion of a production possibilities frontier (PPF), or transformation frontier
+    + if inputs become less scarce, production can expand in the direction of $x$ or $y$ 
+        - this shifts out the PPF, but can also enlarge a consumer-Edgeworth box
+
+* recall: the slope of the PPF is called the *marginal rate of transformation*, MRT
+
+#### Allocative Efficiency 
+
+* is achieved where 
+\begin{equation}
+\label{eq:MRSMRT}
+MRS_A = MRS_B = MRT
+\end{equation}
+* i.e., the marginal willingness to give up $y$ for $x$ of each consumer corresponds to producers' marginal transformation of $y$ into $x$ 
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Public versus Private Goods
+
+::: panel-tabset
+#### Classification
+
+<!-- multicolumn setup .................................................... -->
+
+::: columns
+::: {.column width="50%"}
+##### Two Dimensions
+
+![](images/pgoods.png)
+:::
+
+::: {.column width="50%"}
+##### Examples
+
+<br>
+
+A)  pure private (glass of water)
+B)  pure public (protection of the ozone layer)
+
+impure public:<br>
+
+C)  club good (EU market access when complying w environm standards)
+D)  common pool resource (deep-sea fishbank)
+:::
+:::
+
+<!-- END multicolumn setup ................................................ -->
+
+#### Remarks
+
+-   if the evaluation is negative, we speak of **public bads** under non-rivalry and non-excludability
+-   goods can morph from one category to another if circumstances change
+-   illustration using common pool or common property resources:
+    -   since a fully rival resource is in limited supply, but no price is charged for its use, demanders may 'overuse' it (**tragedy of the commons**)
+    -   market outcome without rationing demand by high enough prices means there is no adequate indicator for scarcity
+    -   why don't we just charge a price?
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Examples
+
+::: panel-tabset
+#### Military Spending
+
+<iframe src="https://ourworldindata.org/grapher/military-expenditure-share-gdp?time=2020&amp;country=USA~RUS~GBR~FRA~DEU~ITA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;">
+
+</iframe>
+
+#### Flood Risk and Dykes
+
+<iframe src="https://www.atlasleefomgeving.nl/kaarten?config=3ef897de-127f-471a-959b-93b7597de188&amp;gm-z=3&amp;gm-x=149354.93235500014&amp;gm-y=457850.2760201119&amp;gm-b=1544180834512,true,1;1577980949152,true,1;1702303985585,true,0.86&amp;layerFilter=Standaard%20gebruiker&amp;use=piwiksectorcode" loading="lazy" style="width: 100%; height: 600px; border: 0px none;">
+
+</iframe>
+:::
+
+## Free Riding {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Social Dilemmas {.smaller}
+
+::: panel-tabset
+#### Overview
+
+```{=latex}
+\begin{itemize}
+\item
+        public good provision is akin to social dilemmas known from other social sciences (bystander effect, diffusion of responsibility, tragedy of the commons)
+\item
+        in this context, inaction is \textbf{individually rational}: action means cost of effort for yourself and sharing results, inaction means no cost of effort and also sharing results
+\item
+        free riding: fundamental problem to rely on voluntary action
+\item
+        prisoner's dilemma: equilibrium (market outcome) may result in inaction of all players, which is socially inefficient
+        (underprovision and \textbf{collective irrationality})
+\end{itemize}
+```
+#### Inaction, I
+
+> <q>… a young woman was stabbed to death in the middle of a street in a residential section of New York City. Although such murders are not entirely routine, the incident received little public attention until several weeks later when the New York Times disclosed another side to the case: at least 38 witnesses had observed the attack---and none had even attempted to intervene. Although the attacker took more than half an hour to kill Kitty Genovese, not one of the 38 people who watched from the safety of their own apartments came out to assist her. Not one even lifted the telephone to call the police.
+
+$\qquad\qquad\qquad\qquad$ [J.M. Darley and B. Latané]{.smallcaps}, 1968, "Bystander Intervention in<br> $\qquad\qquad\qquad\qquad$ Emergencies: Diffusion of Responsibility" *J Pers & Soc Psych*
+
+#### Inaction, II
+
+> <q> mamihlapinatapai
+
+::: {style="font-size: 67%;"}
+from the Yaghan language of inhabitants of Tierra del Fuego
+
+> <q> \[two people\] looking at each other hoping that the other will offer to do something which both parties desire but are unwilling to do \[by themselves\]
+
+$\qquad\qquad\qquad\qquad$ [*source:* Wikipedia](https://en.wikipedia.org/wiki/Mamihlapinatapai)
+:::
+:::
+
+### Prisoner's Dilemma
+
+<!-- multicolumn setup .................................................... -->
+
+::: columns
+::: {.column width="50%"}
+![](images/pdsimple.png)
+
+::: {style="font-size: 67%;"}
+payoffs: abating costs 7 to the abater, and brings benefits of 5 to *every* player including oneself
+:::
+:::
+
+::: {.column width="50%"}
+-   the PD is a **non-cooperative** game where each player maximizes their *own* payoff
+-   two rational countries will not by themselves adopt tighter pollution standards ('pollute' is dominant strategy for each)
+-   despite there being gains from doing so, collectively
+-   coordination would have led to [Pareto]{.smallcaps} improvement: { abate, abate }
+-   here: no commitment possible
+:::
+:::
+
+### Extension: Continuous Choice
+
+::::: {.panel-tabset}
+
+#### Discrete Choice
+
+-   Canonical PD only has 2 actions per player
+-   What if there are more?
+    -   add a row / column for every action
+    -   $\#$ rows / columns $\to \infty$: need a different approach
+
+#### Continuous Choice
+
+-   illustration of continuous strategy
+
+-   idea similar to [Cournot]{.smallcaps} strategies in oligopoly settings
+
+-   consider two individuals $i=A,B$, each consuming private $x$ and public good $G$
+
+-   both with income $m=1$, price $p_x=1$
+
+-   budget $\quad 1 = m_i =x_i+g_i, \quad i=A,B\quad$ and $\quad G=g_A+g_B$
+
+-   [Cobb Douglas]{.smallcaps} utility $$\qquad u_i=\sqrt{{x_i}\cdot G}$$
+
+    -   so that, e.g., $\qquad\qquad\qquad u_A=\sqrt{(1-g_A)(g_A+g_B)}$
+
+#### (cont'd.)
+
+:::: columns
+::: {.column width="65%"}
+-   FOC maximization for $A$: $$ \frac{1}{2} ((1-g_A)(g_A+g_B))^{-\frac{1}{2}}\color{blue}{(1-2g_A-g_B)} =0 $$
+-   thus, **best response** $$\color{blue}{1-2g_A-g_B} =0\quad \Leftrightarrow \quad g_A(g_B)=\frac{1}{2}-\frac{1}{2}g_B$$
+-   symmetry, best response for $B$: $$g_B(g_A)=\frac{1}{2}-\frac{1}{2}g_A$$
+:::
+
+::: {.column width="35%"}
+-   equilibrium: $g_A(g_B)=g_B(g_A)$: $$g_A^\circ = g_B^\circ = \frac{1}{3}$$
+-   total quantity public good $$G^\circ=\frac{2}{3}$$
+-   private good $$x_i^\circ=\frac{2}{3}, \quad \sum_i x_i^\circ=\frac{4}{3}$$
+:::
+::::
+
+:::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+
+## Efficiency {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Cooperation
+
+::: columns
+::: {.column width="65%"}
+![](images/beemster.jpg)
+:::
+
+::: {.column width="35%"}
+-   land reclamation and polders
+    -   purpose: economic production and civil protection
+    -   required cooperation
+-   waterboards as early democratic institutions
+    -   supervision of water management
+    -   balancing off diverging interests
+-   foundation for Polder Model
+:::
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### [Samuelson]{.smallcaps}: Optimal Provision of Public Goods
+
+::: panel-tabset
+#### Vertical Aggregation
+
+<!-- multicolumn setup .................................................... -->
+
+::: columns
+::: {.column width="45%"}
+![](images/vertical.png){height="500"}
+:::
+
+::: {.column width="55%"}
+-   demand aggregated across consumers is
+    -   private good: horizontal
+    -   public good: vertical sum of individual demand func's
+-   for two individuals $A$ and $B$
+    -   private good $x$ $$\mathit{MC}_{x}  = \mathit{MB}_{x}^A = \mathit{MB}_{x}^B$$
+    -   public good $G$ $$\mathit{MC}_{G} = \mathit{MB}_{G}^A + \mathit{MB}_{G}^B$$
+-   the latter is the simplified form of the [Samuelson]{.smallcaps} condition
+:::
+:::
+
+<!-- END multicolumn setup ................................................ -->
+
+#### Allocative Efficiency
+
+[Samuelson]{.smallcaps} Condition with a private good $x$ and a public good $G$:
+
+$$MRS_A + MRS_B = MRT$$
+
+recall:
+
+-   MRS -- willingness to give up some $x$ when getting 1 marginal unit of $G$ (slope of indifference curve)
+-   MRT -- units of $x$ to relinquish when needing to produce 1 extra unit of $G$ (slope of production possibilities frontier)
+-   private goods: $MRS_A = MRS_B = MRT$
+
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### [Pareto]{.smallcaps} Efficient Provision in the Continuous Choice Example
+
+::: panel-tabset
+#### Setup
+
+-   social planner's problem $$\max_{x_A,x_B,G} W \quad \text{s.t.} \quad (x_A+x_B+G-2)$$
+    -   e.g., utilitarian SWF $\quad W=u_A+u_B$ and [Cobb Douglas]{.smallcaps} utility $\qquad u_i=\sqrt{{x_i}\cdot G}$
+-   Lagrange function $$\max_{x_A,x_B,G,\mu}{\cal L}= \left(x_A^{\frac{1}{2}}+x_B^{\frac{1}{2}}\right)\cdot G^{\frac{1}{2}}-\mu(x_A+x_B+G-2)$$
+-   first two FOCs $\qquad \displaystyle \frac{\partial {\cal L}}{\partial x_i} = \frac{1}{2} x_i^{-\frac{1}{2}} G^{\frac{1}{2}}-\mu=0,\quad i=A,B\quad$ imply $\quad x_A=x_B\equiv x$
+
+#### Solution
+
+-   BC implies $x=1-0.5G$
+-   then, $W=2\left[G- \frac{1}{2} G^{\frac{1}{2}}\right]^{\frac{1}{2}}$
+-   FOC wrt $G$: $$\left[G- \frac{1}{2} G^{\frac{1}{2}}\right]^{-\frac{1}{2}} \cdot (1-G)=0$$
+-   implies $G^\star=1$, so $x_i^\star=0.5$
+-   note: $g_i$ are indeterminate, i.e., infinitely many [Pareto]{.smallcaps} efficient solutions
+-   $W^\star = \sqrt{2} > W^\circ = \frac{2}{3}\cdot\sqrt{2}$
+
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### [Lindahl]{.smallcaps} Equilibrium
+
+::: panel-tabset
+#### Overview
+
+-   [Lindahl]{.smallcaps}'s question: what prices would support the efficient solution $G^\star$?
+-   if we allow preferences to differ, then in order for all consumers to demand the **same** quantity of the public good, prices or financing shares (or fees, contributions, taxes) may have to vary across consumers: $$\tau_i, \qquad i=A,B$$ such that $$G_i^\star(\tau_i)=G^\star = \text{const.}$$
+-   these optimal, but heterogeneous financing shares $\{\tau_A^\star, \tau_B^\star \}$ are also known as [Lindahl]{.smallcaps} prices
+-   they could be found by a pricemaker calling out sets of prices until all consumers agree
+-   we can calculate them under the assumption that consumers don't act strategically
+
+#### Calculation
+
+<!-- multicolumn setup .................................................... -->
+
+::: columns
+::: {.column width="70%"}
+-   continue [Cobb Douglas]{.smallcaps} example, keeping income $m=1$ and $p_x=1$, but vary $p_G$ by varying financing shares $\tau$
+-   utility for $i=A,B$: $$u_i(\tau_i,G) = \sqrt{(1-\tau_i \cdot G)\cdot G}$$
+-   note that $\tau_A = 1-\tau_B$, i.e., financing shares add up to $1$
+-   e.g., for $B$, FOC: $$\frac{\partial u_B}{\partial \tau_B} = \frac{1}{2}\left((1-\tau_B \cdot G_B)\cdot G_B\right)^{-\frac{1}{2}}\cdot \color{blue}{(1-2\tau_B\cdot G_B)} = 0$$
+-   this can only be true if $\color{blue}{(1-2\tau_B\cdot G_B)} = 0$, or $$G_B=\frac{1}{2\tau_B}$$
+:::
+
+::: {.column width="30%"}
+-   similarly, we obtain $$G_A=\frac{1}{2(1-\tau_B)}$$
+-   we can view $G_A(\tau)$ and $G_B(\tau)$ again as *best response functions*
+-   [Lindahl]{.smallcaps} equilibrium is where they coincide $G_A(\tau_B^\star)=G_B(\tau_B^\star)$: $$(\tau_A^\star,\tau_B^\star,G^\star)= (0.5, 0.5, 1)$$
+
+::: {.callout-warning title="Exercise: show this" icon="false"}
+:::
+:::
+:::
+
+<!-- end multicolumn setup ................................................. -->
+
+#### Strategic Behavior
+
+-   what, if $B$ always chooses his best response $G_B(\tau)$, but $A$ does not?
+
+-   $A$ could $$\max_{\tau_A} u_A(\tau_A, G) \quad\text{s.t.}\quad G_A=G_B(1-\tau_A)$$
+
+-   equilibrium then is $$(\tau_A^s,\tau_B^s, G^s)=\left( \frac{1}{3},\frac{2}{3},\frac{3}{4}\right)$$ (underprovision)
+
+::: {.callout-warning title="Exercise: show this" icon="false"}
+:::
+
+:::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+
+## Mechanisms and Voting {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Main Issue to Address
+
+```{=latex}
+\begin{itemize}
+\item
+        the \textsc{Lindahl} result may come about as voting equilibrium
+\item
+        individuals voluntarily choose the efficient amount, after having revealed their willingness-to-pay schedule
+\item
+        both market and \textsc{Lindahl} solution fail to be optimal because of non-excludability: players have incentive to misrepresent their preferences for public goods if contributions are linked to stated preferences for those goods
+\item
+        after all, players can consume (an inefficiently large amount) of the good `for free'
+\item
+        main informational problem: social planner (gov't) does not know true preferences of people
+\item
+        alternatives
+        \begin{enumerate}
+        \item
+                remove non-excludability: turn public into club good
+        \item
+                preference revelation mechanism
+        \item
+                vote over budget and finance public good from general tax funds
+        \end{enumerate}
+\end{itemize}
+```
+### Simplified Preference Revelation Mechanism
+
+::: panel-tabset
+#### Intro
+
+```{=latex}
+\begin{itemize}
+\item
+        \textbf{mechanism design}: 
+                devise incentive scheme that makes it in individuals'
+                best interest to reveal their true preferences
+\item
+        main idea: individuals are being charged according to their influencing the social decision whether or not to buy the good
+\end{itemize}
+```
+#### Example Payment Mechanism
+
+```{=latex}
+\begin{itemize}
+\item
+        government may buy and pay for a public good of fixed size, and charge the players according to what they say
+\item
+        2 players: total valuation $\ge$ total cost
+\item
+        total cost of provision $10$, true valuation per player $8$
+\item
+        players reports either `8' or `0', i.e.\ are allowed to lie
+\item
+        player is pivotal (influential) if his report changes the social decision
+\end{itemize}
+```
+**player argues:**
+
+```{=latex}
+\begin{itemize}
+\item
+        if I'm pivotal,\\
+        \textcolor{grey}{and if there's a possibility that we jointly could afford to buy the good,}\\
+        `I pay the full cost minus what \textbf{you} report' (else I don't pay)
+\item
+        my payment does \textbf{not depend} on my \textbf{own} report
+\end{itemize}
+```
+#### (cont'd.)
+
+![](images/PGmech.jpg)
+
+```{=latex}
+\begin{itemize}
+\item
+        outcome: truth-telling \alert{weakly} dominant strategy for both
+\item
+        problem: total payments received 4 $<$ total cost $10$
+\end{itemize}
+```
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Vote over Size of Public Good
+
+::: panel-tabset
+#### Median Voter Theorem
+
+```{=latex}
+\begin{itemize}
+\item
+        let citizens vote over size of public good $G$ (or size of gov't), knowing fully well that more spending on it implies less spending on other (private) goods
+\item
+        different people will make different choices $\to$ distribution of preferred choices
+\end{itemize}
+
+
+\textbf{Median Voter Theorem}
+
+\begin{quote}
+In election (political equilibrium), the proposal that coincides with the preference of the median voter determines the size of the public good  that will be chosen (since it gets at least 50\% support of all votes).
+\end{quote}
+
+```
+#### Illustration
+
+![](images/MedianVoterPG.png){width="45%"}
+
+#### Inefficient(?) Outcome
+
+<!-- multicolumn setup .................................................... -->
+
+::: columns
+::: {.column width="60%"}
+![](images/MedianVoterPG2.png){width="80%"}
+:::
+
+::: {.column width="40%"}
+* politically determined size $G^{MV}$ may be larger or smaller than, or even coincide with, the optimal size $G^\star$
+* stable distribution of preferences $\to$ stability of voting outcome
+* MV result not subject to strategic manipulation
+:::
+:::
+:::
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+
+## Summary {.unnumbered background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Summary
+
+* public goods are important ingredients of a functioning and complex society, and first-order relevant for the organization of gov't (e.g., legal system, law enforcement, defense)
+* applications extend to many domains, e.g., development and environmen: how can countries coordinate on reducing carbon emissions, when it is cheaper to free ride?        
+* other global challenges also reflect the need for international cooperation on international public goods
+* market outcomes (uncoordinated interaction of private agents) often leads to underprovision relative to the efficient level
+* efficiency characterized by [Samuelson]{.smallcaps} condition
+* voting (+ tax financing) as practical way to deal with it

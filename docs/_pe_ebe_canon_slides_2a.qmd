@@ -1,0 +1,855 @@
+#  Behavioral Economics and Public Policy {background-color="#049baa"}
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## NEW STUFF {background-color="#acfaf7"}
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Madrian
+
+
+::::: {.panel-tabset}
+
+#### Two Utilities
+
+* neoclassical economics emphasizes utility as a vehicle to explain observed choices (decision utility)
+    + observed choices provide all necessary information about the utility of outcomes 
+    + rational agents may optimize their hedonic experience
+    + but, subjective hedonic experience cannot be observed or measured directly
+
+* classical writers such as Bentham (1789), emphasized experienced utility
+    + utility refers to pleasure and pain, the "sovereign masters" that "point out what we ought to do, as well as determine what we shall do."
+
+#### continued
+
+* recent economic psychology (behavioral economics) emphasizes experienced utility of outcomes, and it may have a time dimension (temporally extended outcomes)
+    + instant utility (here and now)
+    + remembered utility (retrospective)
+    + those are used to evaluate choices and circumstances
+    + see Kahneman et al, QJE 1997
+
+* conceptually, decision and experience utility may differ when considering agents with behavioral tendencies, e.g.
+    + limited attention (inattention)
+    + limited computational capacity (failure to optimize)
+    + biased reasoning
+* economic psychology (behavioral economics) emphasize that such deviations from full rationality are common
+
+
+
+#### test
+
+![](images/Madrian_ARE2014_F1.png){width="50%"}
+
+#### another test
+
+{{< lipsum 1 >}}
+
+::: {.aside}
+
+
+Hi! I'm a side note!
+
+:::
+
+
+:::::
+
+
+
+
+
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Introduction {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Main Takeaways
+
+::: {.callout-note icon="false" title="Methodological Individualism \& Rationality"}
+
+* full rationality as useful modeling assumption
+* real people may suffer from 'behavioral tendencies': cognitive limitations and biases, commitment problems, and not act in their own best interest
+
+:::
+
+::: {.callout-note icon="false" title="Additional Role of Gov't"}
+
+* main position: 'libertarian paternalism'
+* choice achitecture: gov't guides individuals to reconsider their choices
+
+:::
+
+::: {.callout-note icon="false" title="Policy Tools"}
+* choice architecture / nudging
+:::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Rationality and Anomalies {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Economic Modeling
+
+::::: {.panel-tabset}
+
+#### Purpose
+
+```{=latex}
+
+\begin{itemize}
+\item
+        try to understand important aspects of (economic) reality
+\item
+        positive: can predict what happens (`in equilibrium') when environment changes (science)
+\item
+        normative: can evaluate outcomes
+\item
+        build useful, general and simple, but not realistic models
+        \begin{flushright}
+        \emph{entia non sunt multiplicanda praeter necessitatem}\\
+        \textsc{William of Occam} (1285-1347)
+        \end{flushright}
+\end{itemize}
+
+```
+
+#### Principles
+
+* methodological individualism ([Max Weber]{.smallcaps})
+* rationality, often taken to involve
+     + making informed decisions
+     + self-interested behavior
+     + optimization
+* falsifiability ([Karl Popper]{.smallcaps})
+
+
+#### Example Microeconomic Forecast
+
+Individual household purchasing power prediction, based on microdata (CBS) and microsimulation model (CPB), taking into account legislated policy measures.
+Predicted changes 2023 relative to 2022.
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+##### Boxplot by Demographics
+
+![](images/koopkrachtboxplot2023.png){.lightbox}
+
+
+:::
+
+::: {.column width="50%"}
+##### Scatterplot by Gross Household Income
+
+![](images/koopkrachtpuntenwolk2023.png){.lightbox}
+
+::: {style="font-size: 70%;"}
+[*source:* gov't](https://www.rijksfinancien.nl/memorie-van-toelichting/2023/OWB/XV/onderdeel/1452043){target="_blank"}
+:::
+
+:::
+:::: 
+
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Neoclassical v Behavioral Economics
+
+::: {.panel-tabset}
+
+#### Neoclassics
+
+```{=latex}
+
+\begin{itemize}
+\item
+        neoclassical economics relies on \alert{axioms of choice}: consumer preferences are 
+        stable, transitive (consistent), and represent true valuations; choices are rational
+\item
+        full rationality means, people cannot be fooled, neither by themselves (perception, expectation), nor by others; 
+        they know what they want and how to achieve it
+\item
+        o.k. for competitive firms that perish if they fail to optimize, but for consumers?
+\end{itemize}
+
+```
+
+#### Psychology
+
+```{=latex}
+
+\begin{itemize}
+\item
+        psychology shows that consumers are easily tricked, make errors, are subject to decision biases, or otherwise deviate from optimizing paradigm
+
+        \begin{quote}
+        ``Give me an axiom [on individual behavior] and I'll design the experiment that refutes it.''
+        \begin{flushright}
+        \small
+        Attributed to Amos \textsc{Tversky} (Gilboa et al., 2014, EJ) 
+        \end{flushright}
+        \end{quote}
+
+\item
+        behavioral economics takes into account such deviations
+\end{itemize}
+
+```
+
+#### Contrast
+
+```{=latex}
+
+behavioral approach as compared to neoclassical
+\begin{itemize}
+\item
+        sometimes very different predictions about 
+        \begin{itemize}
+        \item
+                how people react to financial incentives or regulation
+        \item
+                welfare consequences and policy implications
+        \end{itemize}
+\item
+        methodology: welfare assessment and policy prescriptions not always tightly tied in with theorizing
+\item
+        empiricism: what works when and for whom?
+\end{itemize}
+
+```
+::: 
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Nobel Prizes to Economic Psychologists
+
+::: {layout-ncol=2}
+
+![Kahneman $\bullet$ Thinking, Fast & Slow](images/Thinking_Fast_and_Slow.jpg){width=70%}
+
+![Thaler & Sunstein $\bullet$ Nudge](images/Nudge-cover.jpg){width=70%}
+
+:::
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Psychology: Anomalies
+
+* deviations from rationality are seen by neoclassical economists as `anomalies' that cannot easily be explained by the mainstream paradigm
+* [Kahneman]{.smallcaps}, [Tversky]{.smallcaps}, [Thaler]{.smallcaps} and others stress that those `anomalies' are quite common and have a structural feature, as they are frequently observed in human decisionmaking
+* they point to economic theory being too rigid and turn to psychology for explanation
+* important work is developed from descriptive evidence from lab experiments
+* the [Journal of Economic Perspectives ran a feature `Anomalies'](https://www.aeaweb.org/journals/jep/search-results?ArticleSearch%5Bwithin%5D%5Barticletitle%5D=1&ArticleSearch%5Bwithin%5D%5Barticleabstract%5D=1&ArticleSearch%5Bwithin%5D%5Bauthorlast%5D=1&JelClass%5Bvalue%5D=0&journal=3&ArticleSearch%5Bq%5D=anomalies){target="_blank"}, helping to popularize insights from economic psychology in research and education
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### [Kahneman:]{.smallcaps} Psychology of Behavior
+
+
+::::: {.panel-tabset}
+
+#### 2 Systems
+
+::: {.callout-important appearance="minimal" }
+
+* Why do so many people fail to save for retirement? 
+* Why do people spend more when they swipe a credit card? 
+* Does our emotional state affect our spending decisions?
+
+:::
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+```{=latex}
+
+\begin{itemize}
+\item
+        \textbf{System 1}: people decide \textbf{fast}, instinctively, effortless, using heuristics, and emotionally
+\item
+        \textbf{System 2}: individuals make rational and informed choices; this costs effort, and is \textbf{slow}
+\item
+        individuals may not always be very good at all to make good choices for themselves, especially when applying System 1 in \textbf{complex} settings
+\item
+        human decision-making is prone to phenomena like anchoring, procrastination, and status quo bias
+\end{itemize}
+
+```
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/fastandslow.png)
+
+::: {style="font-size: 70%;"}
+[*Illustration:* OECD](https://www.oecd.org/gov/regulatory-policy/BASIC-Toolkit-web.pdf){target="_blank"}
+:::
+
+:::
+
+::::
+
+#### Schema
+
+![](images/kahneman.jpg){width=80%}
+
+::: {style="font-size: 70%;"}
+*Source:* Kahneman, Daniel, "Maps of Bounded Rationality", *AER*, 2003.
+:::
+
+
+:::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Preferences: Behavioral Theory {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Imperfect Optimization {.smaller}
+
+::: {.panel-tabset}
+
+```{=latex}
+
+\begin{itemize}
+\item
+        numerous psychological experiments demonstrate \alert{systematic} deviations from full rationality
+\item
+        evidence suggests that people make choices that appear to ignore or misconstrue available information, make optimization errors or logical inconsistencies, classifiable into 3 areas
+        \begin{enumerate}
+        \item
+                limited attention (inattention)
+        \item
+                limited computational capacity
+        \item
+                biased reasoning
+        \end{enumerate}
+\item
+        there is no unified and universal theory of decisionmaking that can serve as a flexible and comprehensive alternative of modeling choice
+        \begin{itemize}
+        \item
+                prospect theory (for choice under risk) is one such theory
+        \end{itemize}
+\end{itemize}
+
+```
+
+#### Ltd. Attention
+
+```{=latex}
+
+\begin{enumerate}
+\item
+        salience effects\\
+        certain features of a choice problem (e.g. attributes of objects that can be chosen) are more salient (visible) than others; 
+        cues matter
+        %cues that direct attention towards or away from such certain characteristics may matter for the observed choice under consumers' inattention
+        \begin{itemize}
+        \item
+                \textcolor{gray}{Chetty et al. (2009, AER): taxes that are not salient in posted retail prices (U.S.) have limited effects on demand}
+        \end{itemize}
+\item
+        local construal / availability bias\\
+        consumers focus on information easily at `at hand', optimize locally
+        %consumers lose the big picture view and optimize locally (not seeing the forest for the trees and hence focus on suboptimal parts of the choice set)
+\end{enumerate}
+
+```
+
+#### Ltd. Comp. Capacity
+
+```{=latex}
+
+\begin{enumerate}
+\item
+        decisional conflict\\
+        choice process in itself too difficult $\to$ delay complex choices
+\item
+        inconsistent valuation\\
+        `irrelevant' alternatives start to matter, or choices are intransitive 
+\item
+        `schmeduling'\\
+        inappropriate understanding of incentives in, e.g., nonlinear price or tax schedules
+\item
+        mental accounting and choice bracketing\\
+        treat income differently depending on its source (e.g., lottery winnings), or earmark for certain expenditures
+        \begin{itemize}
+        \item
+                \textcolor{gray}{Kooreman (2000, AER): transfers labeled `child benefit' are actually spent on child goods}
+        \end{itemize}
+\end{enumerate}
+
+```
+
+#### Biased Reasoning
+
+```{=latex}
+
+\begin{enumerate}
+\item
+        probabilistic biases
+        \begin{itemize}
+        \item
+                availability heuristics
+        \item
+                representativeness heuristics
+        \item
+                over[under]weighting low [high] probabilities
+                \begin{itemize}
+                \item
+                        e.g., purchase flood insurance after the flood
+                \end{itemize}
+        \end{itemize}
+\item
+        motivational biases
+        \begin{itemize}
+        \item
+                overconfidence
+                \begin{itemize}
+                \item
+                        \textcolor{gray}{74\% of interviewed car drivers thought their overall skills were (much) better than average; Williams, J Safety Res 2003}
+                \end{itemize}
+        \item
+                overoptimism
+                \begin{itemize}
+                \item
+                        \textcolor{gray}{nascent entrepreneurs expect 81\% chance to get a business started, compared to actual 48\%; Cassar, Str Mng J 2010}
+                \end{itemize}
+        \end{itemize}
+\end{enumerate}
+
+```
+
+
+:::
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Bounded Self-Control
+
+```{=latex}
+
+\begin{itemize}
+\item
+        consumers may want one thing yet achieve another: lack of discipline when implementing choices over time (ex post choices deviate from ex ante plans)
+\item
+        preferences are not time-consistent, unless consumers can find a way to control themselves
+\item
+        relevant phenomena include
+        \begin{enumerate}
+        \item
+                procrastination: delay acting
+        \item
+                not resisting temptation, instant gratification
+        \item
+                channel factors\\
+                small inducements [hindrances] can overcome [cause] inaction
+        \item
+                mental state and emotional affect\\
+                projection bias: project current preference on future self
+        \item
+                addiction\\
+                loss of self-control, but also changed experienced utility
+        \end{enumerate}
+        
+\end{itemize}
+
+```
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Nonstandard Preferences {.smaller}
+
+::: {.panel-tabset}
+
+#### Overview
+
+```{=latex}
+
+\begin{itemize}
+\item
+        neoclassical economics is replete with neutrality results, among which: your valuation of a consumption bundle is independent of whether you sell or you buy:\\ \qquad willingness to pay = willingness to accept
+\item
+        neoclassical economics also assumes \alert{for convenience} that agents are selfish
+\item
+        psychology finds experimental evidence that this is not true in general, and preferences are different depending on situation
+        \begin{enumerate}
+        \item
+                reference-dependent preferences
+        \item
+                other-regarding preferences
+        \end{enumerate}
+\end{itemize}
+
+```
+
+#### Reference-dep.
+
+```{=latex}
+
+\begin{enumerate}
+\item
+        endowment effect
+        \begin{itemize}
+        \item
+                endowment (ownership of property) creates a reference point (of expectations) that affects valuations
+        \item
+                owners of an object need more compensation to part with the object, than they'd be willing to pay for the object if they'd not own it
+        \end{itemize}
+\item
+        loss aversion
+        \begin{itemize}
+        \item
+                individuals perceive losses more intensely than gains
+        \item
+                tax cuts are perceived differently from transfers  
+        \item
+                extreme risk aversion, and possibly risk-loving with respect to losses (willingness to accept losses in order to avoid even larger losses)
+        \end{itemize}
+\item
+        status quo bias
+        \begin{itemize}
+        \item
+                stick with past choices instead of reacting to changed environment (incentives)
+        \end{itemize}
+\end{enumerate}
+
+```
+
+#### Other-regarding
+
+```{=latex}
+
+\begin{enumerate}
+\item
+        altruism
+\item
+        procedural fairness
+\item
+        conformity with social norms
+\item
+        interpersonal preferences\\
+        positional preferences, relative to the outcomes of others
+\end{enumerate}
+
+```
+
+#### Commitment Devices
+
+* semi-rational people may know their shortcomings and act on it
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Odysseus, being exposed to the luring songs of the sirens, had himself tied to the mast of his vessel, so as to resist temptation
+* most relevant in contexts where short-run benefits are available immediately, 
+and long-run benefits are discounted heavily
+* exercise; quit smoking and facebooking\ldots : 
+     + commit by signing up for the gym; 
+     + install quit-smoking app, limit-screen-time app etc.
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Odysseus-Sirens.jpg)
+
+:::
+
+::::
+
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Some Critical Remarks
+
+::::: {.panel-tabset}
+
+#### Remarks 1
+
+* neoclassical microeconomics studies behavioral response to changing circumstances
+* behavioral economics is interested in delivering a better positive description of observed behavior from  preference variation
+    + rather than offering a single, integrated approach, a whole range of effects and phenomena with limited domains are studied
+* a given phenomenon may also be explained using the neoclassical approach, when rational choice accounts for frictions or transaction costs of information acquisiton and processing (rational inattention; e.g., Mackowiak et al, JEL 2023.)
+
+#### Remarks 2
+
+* very different phenomena may underlie the same observational outcome, so the nature of preferences is typically not revealed through (identified from) observed choices
+* real-life choices may differ from behavior observed in the lab
+* in reality, people can learn from others (experts, peers) or over time, bolstering rational choice
+* behavioral effects involving others in real life are not always distinguishable from rational, strategic choice
+     + selfishness need not be maintained in neoclassical approach
+* does a better behavioral description matter in the aggregate or in equilibrium?
+
+:::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Choice Architecture {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Choice Architecture {.smaller}
+
+```{=latex}
+
+\begin{itemize}
+\item
+        Individuals' cognitive limitations and psychological biases can be a source of market inefficiency.
+\item
+        Choice architecture: gov't can guide consumers by \alert{designing and structuring complex choices} and induce them `do a reasonable thing' (not necessarily `the right thing') 
+\end{itemize}
+
+\begin{quote}
+        ``For many people, being asked to solve their own retirement savings problems is like being asked to build their own cars.'' (Richard \textsc{Thaler})
+\end{quote}
+
+\begin{itemize}
+\item
+        \emph{Nudge} (\textsc{Thaler/Sunstein}, 2008):
+        gov't can help people make good informed decisions without limiting their freedom to choose otherwise
+        (libertarian \alert{paternalism}: without taxing, subsidizing, mandating or regulating) 
+\item
+        nudges as policy tool
+\item
+        \textcolor{gray}{related: gov't provides / subsidizes goods it wants individuals to consume (\alert{merit} goods)}
+\end{itemize}
+        
+```
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Nudges Are $\ldots$
+
+```{=latex}
+
+\begin{itemize}
+\item
+        \ldots noncoercive changes in choice architectures that minimally impact opportunities, but nevertheless incline people toward `good' decisions
+\item
+        \ldots easy and cheap to implement and to avoid
+\item
+        \ldots nonintrusive interventions: choice is left to the individual, but the government pursues the objective of improving outcomes, on the grounds that people have cognitive limitations and suffer from systematic choice biases
+\end{itemize}
+
+```
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Nudges: Examples
+
+::: {layout-nrow=2}
+![](images/smombies.jpg)
+
+![](images/athleticnudge.jpg)
+
+![](images/cigaretteswarning.jpg)
+
+![](images/3Dzebra.jpg)
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Policy Relevance
+
+```{=latex}
+
+\begin{quote}
+``A lot of our policy models traditionally are based on a rather
+naive understanding of what drives behavior. But if you have
+a more intelligent, nuanced account of how people make
+decisions, you can design policy that is more effective, less
+costly, and makes life easier for most citizens."
+\end{quote}
+
+David \textsc{Halpern}, Director of the UK Behavioural Insights Team
+
+```
+
+<br>
+
+#### Questions
+
+* is it a public task to anticipate on how real citizens understand and act on gov't rules, regulation and communication?
+* does the gov't need to protect citizens from themselves, or the consequences of their limitations?
+* how and what does and should the gov't know about individual behavioral tendencies, cognition and circumstances?
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Organ Donation (Consent) Rates
+#### Opt-in v Opt-Out Defaults
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+:::: {.column width="60%"}
+
+![](images/organdefault.jpg){width="125%"}
+
+::: {style="font-size: 70%;"}
+*source:* Johnson \& Goldstein, Do Defaults Save Lives? Science 2003
+:::
+
+::::
+
+
+:::: {.column width="40%"}
+
+![](images/donations_schulze_wales_2023.png)
+
+::: {style="font-size: 70%;"}
+*source:* Schulze Spuentrop, Implementing Opt-Out, Ifo WP 2023
+:::
+
+::::
+
+::::
+
+
+
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Recommendations for Choice Architecture
+
+::: {.aside}
+see: Thaler, Sunstein \& Balz (2014), "Choice Architecture", Shafir, ed., *The Behavioral Foundations of Public Policy.*
+:::
+
+::: {.panel-tabset}
+
+#### Recommendations
+
+```{=latex}
+
+\begin{itemize}
+\item
+        people tend to stick with an initial, or suggested choice
+        \begin{itemize}
+        \item
+                if task not too complex: require an active choice, or
+        \item
+                if task more intricate: set defaults well, in the interest of individual or society (organ donation)
+        \end{itemize}
+\item
+        Expect error: allow for choice to be revised
+\item
+        Give feedback, send reminders, issue warnings (hwy speed monitoring)
+\end{itemize}
+```
+
+#### (cont.'d)
+
+```{=latex}
+
+\begin{itemize}
+\item
+        Structure complex choices, make them transparent and break into sub-problems, make important aspects salient (visible), frame them wisely
+\item
+        Simplify, aid planning (decision tools, calculators), use personalized information,
+        or standardized options to increase comparability
+\item
+        Understand incentives in choice architecture (in particular conflict of interest under asymmetric information / principal-agent relationships) 
+\item
+        Understand translation from choice options (technical aspects) to consumer welfare (experienced utility)
+\end{itemize}
+
+```
+
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Some Critical Remarks
+
+```{=latex}
+
+\begin{itemize}
+\item
+        nudges are (subtly) manipulative: get people to make choices that they would not have made in the absence of the nudge
+\item
+        this may also involve insiduous actions that are not innocuous but border on autonomy-diminishing policies that have more in common with subliminal advertising: gov't exploits citizens' weakness of limited rationality,         
+        such that the nudge is not neutral wrt individual autonomy ($\to$ conflicts with libertarianism)
+\item
+        making nudges fully transparent
+        in order to remove the vulnerability to abuse, may lead to nudges losing their bite
+\item
+        infantilisation and moral hazard: if people get used to being nudged, they lose their choice autonomy, and may fail to take the necessary effort for rational decisionmaking in un-nudged situations
+\end{itemize}
+
+
+```
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Summary {background-color="#acfaf7"}
+
+### Two Approaches Compared {.smaller}
+
+```{=latex}
+
+\begin{itemize}
+\item
+        neoclassical economics provides unified and axiomatic normative framework, lends itself to structural analysis of policy questions (revealed-preference paradigm)
+        \begin{itemize}
+        \item
+                empirical work used to confront the theory, helps predicting (agents react to incentives)
+        \item
+                can measure welfare from observed data
+        \item
+                in important cases, it fails (theory not supported)
+        \end{itemize}
+\item
+        psychology-led experimental research is more descriptive and empirical, but appears scattered, insular, ad-hoc, context-specific, phenomena-driven, hard to unify and generalize and to use for policy design
+        \begin{itemize}
+        \item
+                nudges as defensive/conservative/non-intrusive policies
+        \item
+                theorists in behavioral (public) economics + finance are working on a unifying frame to generalize the implications for welfare measurement and policy (e.g., Doug Bernheim, Raj Chetty, Sendhil Mullainathan, etc.)
+        \end{itemize}
+\end{itemize}
+
+```
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Summary and Conclusions
+
+```{=latex}
+
+\begin{itemize}
+\item
+        real people are not always as rational as economic models assume
+\item
+        some individuals have difficulties making decisions (or committing to plans) that are in their own best interest
+\item
+        gov'ts have taken to leverage their administration using technology (computing algorithms, big data), but sometimes neglected to take into account behavioral limitations and psychological factors of citizens in communication and execution of rules
+\item
+        evidence consistently shows that behaviorally-informed policy choices and nudges can be successfully and cost-effectively administered taking into account existing heterogeneity in the population along relevant margins
+\item
+        what nudges (or other policies) to implement to help people make better decisions for themselves depends on context
+\end{itemize}
+
+
+```
+
+
+
+
+
+
+
+
+

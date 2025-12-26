@@ -1,0 +1,514 @@
+# Local and Global Public Goods  {background-color="#049baa"}
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Geography and Politics
+
+* so far, have ignored the spatial distribution of costs and benefits of a public good
+* geography may matter for enjoying benefits: if you live far away from the point of provision of the public good, you may not benefit directly, and maybe also not indirectly
+* certain public facililities are clearly local and target citizens of a municipality or region
+* local PG problems can be overcome through coordination and cooperation of closely interacting jurisdictions
+     + if not, a central gov't can coordinate or impose actions to take
+* other goods are truly global without exclusion and no direct coordination
+* politics matters: a voting approach to determine public good allocation can only reflect preferences of those that may vote within the jurisdiction, and not those of outsiders---even though those may be affected as well by the public good
+
+<!-- ** NEW SUSBECTION ***************************************************** -->
+## Local Public Goods (LPGs) {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Decentralization
+
+
+#### Regional Tasks and Units
+
+* hierarchical organizations of gov't (federal, state, county level etc.) typically have multi-level layers of  tax revenue collection and expenditure responsibilities between different levels
+
+* fiscal federalism: system of transfers and grants from the federal gov't to state/county gov't 
+
+* there is a wide variation of decentralization of tasks across countries,  and there are non-uniform changes in the patterns over time
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Communities as Clubs
+
+* local public good: benefits geographically restricted
+* municipalities: clubs that provide local public goods
+* financing is through local budgets (local taxes)
+* consumer can move into the area ('join the club') and pay local taxes ('membership fee')
+* analogy with exclusion: local authorities can prevent additional new building and can enforce tax collection
+* clubs (municipalities) with higher levels of public goods charge higher fees (taxes)
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### [Tiebout]{.smallcaps} Hypothesis
+::::: {.panel-tabset}
+
+#### Mechanism
+
+::: {.callout-note icon="false" title="[Tiebout]{.smallcaps} Hypothesis"}
+
+Under restrictive conditions (esp.\ absence of transaction costs), provision of local public goods is not associated with free-riding problems. These goods can be provided efficiently.
+
+:::
+
+* main mechanism at work: **sorting** according to preferences
+
+* if level of provision / level of taxes differs between municipalities, choice of location **reveals preference** w.r.t. level of local public goods through 'voting with one's feet'
+* by choosing non-optimal location, consumer merely hurts himself
+* with many different communities and many preference-types, market outcome (self-selection, sorting) is fully efficient
+
+#### Considerations
+
+* maintained assumptions
+    + no fixed link between income and location
+    + no transaction costs of moving
+    + number and structure of different communities needs to match number and structure of consumer types ('infinity')
+* practical view
+    + [Tiebout]{.smallcaps} stresses the tendency of the public good problem solving itself once possibility of sorting according to preferences is taken into account     
+    + emphasis that tax/transfer differentials may matter for migration decisions  
+
+:::::
+
+<!-- ** NEW SUSBECTION ***************************************************** -->
+## Global Public Goods (GPGs) {background-color="#acfaf7"}
+
+
+### GPGs 
+
+:::::: {.panel-tabset}
+
+#### Issue
+
+* as every PG, GPGs are non-rival and non-excludable
+* but their range is global (or at least transnational)
+* once provided, no country can be prevented from enjoying a GPG; nor can any country's  enjoyment of the good impinge on the consumption opportunities of other countries
+* if provided, GPGs make citizens better off everywhere
+* typically, some sort of coordination between countries is required
+
+#### Examples
+
+##### Including Global Public Bads and Impure Versions
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+* ozone layer depletion
+* extinction of endangered species
+* common pool resources (e.g., overfishing)
+* climate change
+::: 
+
+::: {.column width="50%"}
+![](images/ozone9.11.webp){width="40%"}
+::: 
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+* infectious disease pandemics / vaccination
+* factor mobility and eroding gov't powers (race to the bottom)
+     + migration: social insurance shopping
+     + tax competition and/or tax avoidance: diminishing (capital) tax base
+
+#### Covid19
+
+
+<iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&time=earliest&facet=none&uniformYAxis=0&country=NLD~GBR~USA~ITA~DNK~SWE&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=People+fully+vaccinated&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+
+#### Typology
+
+::::: {.columns}
+
+:::: {.column}
+* Single Best Effort<br>
+
+::: {style="font-size: 75%;"}
+every country would be willing to sacrifice resources for provision and go it **alone**; one country is needed to provide it once and for all<br>
+Ex.: asteroid annihilating planet earth
+:::
+
+* Weakest Link<br>
+
+::: {style="font-size: 75%;"}
+can only be provided with the active participation of **every** country provision depends on weakest individual effort<br>
+Ex.: smallpox eradication
+:::
+
+* Aggregate Effort<br>
+
+::: {style="font-size: 75%;"}
+provision of the good depends on \textbf{total} effort of many countries<br>
+Ex.: reduction of GHG emissions
+:::
+
+::::
+
+:::: {.column}
+
+* Mutual Restraint<br>
+
+::: {style="font-size: 75%;"}
+countries should \textbf{refrain} from doing the wrong thing<br>
+Ex.: nuclear disarmament
+:::
+
+* Coordination<br>
+
+::: {style="font-size: 75%;"}
+countries do the \textbf{same} thing, or coordinate their actions<br>
+Ex.: standards of time, weighs and measures<br>
+<br>
+<br>
+<br>
+*source:* Barrett, Why Cooperate? OxUP, 2007
+:::
+
+::::
+
+:::::
+
+
+::::::
+
+
+### Unilateral Action v Cooperation
+
+:::::: {.panel-tabset}
+
+#### Issue
+
+* unilateral action, where players forego the benefits from cooperation and do not care about others free-riding on them, can help some:
+* if good's quantity is binary (annihilation example: all or nothing), in a single-best-effort provision there is no free-riding problem, since the good will not be underprovided
+* more generally, might observe this where a player has private marginal benefits exceed marginal cost of provision
+* if the good's quantity is continous, still have free-riding and underprovision
+* welfare loss (compared to full cooperation) remains but is smaller (compared to non-cooperation)
+
+#### Welfare Loss Illustrated
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* efficient solution Samuelson rule: $G^*$
+* private-market equilibrium corresponding to Prisoner's Dilemma is at a quantity of $G=0$
+    + welfare loss (total surplus foregone) is large
+* unilateral action by player $j$: choose quantity $G^o$ such that  $$MB_j(G^o) = MC(G^o)$$
+    + welfare loss is smaller
+
+:::
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-pgoods >}} width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::::
+<!-- end columns -->
+
+::::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Data
+
+#### Multinational Environmental Agreements
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/IEAhyear.png)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/IEAkNsig.png)
+
+:::
+
+::::
+<!-- end columns -->
+
+::: {style="font-size: 75%;"}
+*data source:* R.B. Mitchell, [U Oregon](https://iea.uoregon.edu)
+:::
+
+
+* data suggests: small number of signatories
+* unclear: how many agreements would there be, if there was no free-riding?
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Pollution Abatement Game with $N$ Players
+
+::::: {.panel-tabset}
+
+#### Notation
+
+```{=latex}
+\begin{itemize}
+\item symmetric $N$-player game with 2 actions: abate or pollute
+\item denote player $i$'s binary abatement action $q_i = \{ 0, 1 \}$ for (pollute, abate)
+\item denote total abatement by all players $$Q=\sum_{j=1}^N q_j = q_i+Q_{-i};\qquad Q_{-i} \equiv \sum_{j\neq i; j=1}^N q_j$$
+\item benefit $b$: everyone's abatement benefits everybody (all players)
+\item cost $c$: cost of a player's abatement is private
+\item payoff for player $i$: benefit minus cost, $$\Pi_i(q_i)= b\cdot Q - c \cdot q_i = (b-c) \cdot q_i + b \cdot Q_{-i} $$ 
+\end{itemize}
+```
+
+
+#### Non-cooperative Solution
+
+```{=latex}
+\begin{itemize}
+\item everybody maximizes their own payoff, taking other players' choices as given $$\max_{q_i} \Pi_i(q_i)$$
+\item from FOC (set first derivative to zero), find best response or reaction functions
+\item Nash equilbrium: intersection of best-response functions
+\end{itemize}
+```
+
+#### Cooperative Solution
+
+```{=latex}
+\begin{itemize}
+\item social planner simultaneously maximizes collective payoff of all players
+\item for instance, the sum of all payoffs $\Pi(Q) = \sum_i^N \Pi_i(q_i)$  $$\max_{Q} \Pi(Q) \qquad \to \quad Q^\star$$
+\item and share the result (evenly in a symmetric game) $$\Pi_i^\star = \frac{1}{N} \Pi(Q^\star)$$
+\end{itemize}
+```
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Payoff-Functions for Multiplayer Prisoner's Dilemma (MPD)
+
+::::: {.panel-tabset}
+
+#### 2-Player Example
+
+* Recall payoff for player $i$: $$\Pi_i(q_i)= (b-c) \cdot q_i + b \cdot Q_{-i} $$ 
+* assume: abating costs 7 to the abater, and brings benefits of 5 to *every* player including oneself
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=latex}
+traditional payoff matrix
+
+\begin{tabular}{lrr}
+        & pollute & abate \\  \hline
+pollute & 0; 0 & 5; -2  \\  
+abate   &-2; 5 & 3; 3  \\ 
+\hline 
+\end{tabular}
+```
+
+
+::: 
+
+::: {.column width="50%"}
+
+```{=latex}
+payoff to player 1 vs number of other abaters $Q_{-1}$
+
+\begin{tabular}{lrr}
+$Q_{-1}$: & 0 & 1  \\ \hline
+pollute & 0 & 5  \\  
+abate   &-2 & 3  \\ \hline 
+\end{tabular}
+```
+
+::: 
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### 3-Player Example
+
+![](images/MPD_3player_example.jpg)
+
+
+\bigskip
+
+**Question:** What, if $N>3$?
+
+
+#### Payoff-Functions
+
+```{=latex}
+\begin{itemize}
+\item define payoff-function:
+     \begin{itemize}
+     \item payoff from playing Abate:   $\color{blue}{\Pi_{A;i}} = \Pi_i(1) = (b-c) + b \cdot Q_{-i} $
+     \item payoff from playing Pollute: $\color{red}{\Pi_{P;i}} = \Pi_i(0) = b \cdot Q_{-i} $
+     \end{itemize}
+\item using generic notation, this applies to all $N$
+\item $\to$ instead of looking at a matrix game, the very simple PD structure allows just focusing on the difference in payoffs between two actions, possibly as a function of $Q_{-i}$, the number of players abating other than player $i$
+\end{itemize}
+```
+
+#### Symmetric MPD Graph
+
+
+```{=latex}
+\begin{tabular}{lrrrrrrrrrr}
+& \multicolumn{10}{c}{$Q_{-1}$} \\ 
+        & 0 & 1 &  2 &  3 &  4 &  5 &  6 &  7 &  8 &  9 \\ \hline
+pollute & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 \\  
+abate   &-2 & 3 &  8 & 13 & 18 & 23 & 28 & 33 & 38 & 43 \\ \hline 
+\end{tabular}
+```
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/gdwc4chwwa?embed" width="1350" height="450" style="border: 1px solid #ccc" frameborder=0></iframe>
+```
+
+:::::
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Treaties
+
+* MPD shows: pollute always dominates abate, at any number of abating other countries
+* non-cooperative equilbrium: no-one abates!
+* GPG problems cannot be solved through coordination from or mandates by a supernational gov't
+* yet, there is the possibility of acceding voluntary int'l agreements (treaties)
+     + most international agreements are based on the idea to have a voluntary club of countries that commits to some form of cooperative action
+     + joiners can, like players in an [Edgeworth]{.smallcaps} box, find a [Pareto]{.smallcaps} efficient solution for themselves and harness the gains from cooperation
+     + however, many countries would not want to join, since free-riding is more beneficial than cooperating
+     + various COP meetings (e.g., 2015 Paris, 2023 Dubai, etc.) show that large agreements are (a) rare, and (b) not very powerful 
+
+::: {.callout-important icon="false" title="Selfenforcing Agreements"}
+Treaties must be self-enforcing, and do more than simply tell countries what to do. Treaties must  make it in the own interest of countries to voluntarily behave as every country would like them to behave. 
+:::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Treaty Solution to Global Public Goods, I {.smaller}
+
+::::: {.panel-tabset}
+
+#### Overview
+
+* PD shows that there are gains from cooperation
+* two (generally: $k$) countries could simply decide to commit to 'abate', then share the collective gains among participants (divide the total gain by $k$)
+* since participation is voluntary, each such country needs to compare the net benefits from cooperation with the net benefits from free-riding
+* e.g., if the total gains from cooperation are constant, increasing $k$ will make it less attractive to join
+     + where is the tipping point to leave?
+     + how many countries cooperate (what is $k$)?
+     + what is the equilibrium?
+
+#### Stages
+
+There are $N$ countries.<br>
+Consider a treaty. It says: all $k$ signatories will 'abate' and receive the average total gain from cooperation.
+
+Three stages:
+
+1. non-cooperative: each country decides unilaterally whether or not to join / sign the treaty
+2. cooperative: the $k$ signatories 'abate' and share the gains
+3. non-cooperative: the $N-k$ non-signatories decide unilaterally whether to 'abate' or 'pollute'
+
+#### Illustration
+
+![](images/treaty2.png)
+
+:::::
+
+### Treaty Solution to Global Public Goods, II {.smaller}
+
+::::: {.panel-tabset}
+
+#### Solution
+
+Solution is backward: start with 3.
+
+3\. any non-signatory will 'pollute', since no matter what, this is the dominant strategy in non-cooperative play<br>
+
+2\. determine the payoff from cooperating, conditional on $k$<br>
+
+1\. determine $k$ by asking per individual player: is it worth to join and 'abate', or are the payoffs from staying out and 'polluting' higher?
+
+
+#### 2 Players cooperating
+
+Players 1 and 2 inside a treaty, doing the same thing: both abate or both pollute
+
+![](images/treaty_coalition_example.png){width="70%"}
+
+
+P3 will always pollute
+
+#### In or Out?
+
+* benefit from joining: joint payoff from cooperation $>$ payoff from not-cooperating
+* benefit from leaving: free-riding on others (benefit from others' effort, no cost to oneself)
+* mechanism of effective punishment: leaving reduces \# cooperators $k$, who will lower their contributions to the public good; this will limit the attractiveness of free-riding for leavers 
+     + in the limit, cooperation breaks down, erasing benefit of free-riding
+* in a stable equilibrium,
+     + no signatory can gain by unilaterally leaving
+     + no non-signatory can gain by unilaterally joining
+
+#### Role of $k$
+
+* clue to payoffs in PD matrix: every player has cost $c$ of own abatement to himself, but shares the benefits $b$ of anyone's abatement, hence gets $k\cdot b$ with $k$ abaters
+* hence, payoff when cooperating is $\qquad \Pi = k\cdot b - c$
+* it can be shown (see Barrett, ch. 7) that the equilibrium number of treaty participants, $k^\star$, is driven by ratio of $c$ to $b$; $k^\star$ is an integer:
+        $$ \frac{c}{b}\le k^\star \le \frac{c}{b}+1$$
+* example: $c=7$, $b=5$ $\quad\Rightarrow\quad$ $k^\star =2$
+
+
+#### Role of $N$
+
+* $N$ large and large gains of cooperation entails large incentive to leave
+     + by leaving, the leaver suffers little in terms of reduced benefits, but gains a lot in terms of reduced costs
+     + leaving is very attractive
+* $N$ small: 
+     + credible punishments will be large relative to the gains from leaving, and a self-enforcing agreement can sustain a high participation rate
+* equilibrium number of signatories, typically $k^\star\ll N$
+
+:::::
+
+### Comments on the Approach
+
+* both signatories and non-signatories would gain from full cooperation (everybody cooperates)
+* full cooperation is not a self-enforcing [Nash]{.smallcaps} equilibrium and hence vulnerable to some parties wanting to renegotiate
+* non-signatories are better off than signatories
+* symmetry: the approach may be able to predict how large the groups are, $k^\star$ and $N-k^\star$, but will not say anything about the identity of players
+* cooperation can occur where the difference between global net benefits under the full cooperative and non-cooperative solutions is small; when this difference is large, a self-enforcing treaty will have few members
+* $N$ very large: treaties can achieve very little
+    + treaties tend to codify what is already happening (smallest common denominator)
+    + requiring drastic changes will put off potential members
+
+
+<!-- ** NEW SUSBECTION ***************************************************** -->
+## Summary {background-color="#acfaf7" .unnumbered}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Summary 
+
+* uniform provision of public goods may not do justice to spatial distribution of preferences
+* [Tiebout]{.smallcaps}'s voting with one's feet puts democracy upside down: instead of voting over provision of public goods, people sort to locations where their preferences match a given level of public good provision
+     + needs heroic assumptions (e.g. absence of transaction costs)
+     + needs no coordination between (local) governments
+* global public goods do need coordination, and treaties have been shown to be successful, if slowly emerging
+* treaties can be equilibrium constellations that harness some of the gains of cooperation, while keeping free-riding in check
+     + the decision to join or leave the treaty is voluntary
+     + players that agree to the treaty are obliged to cooperate and share the gains
+     + this can be an equilibrium, however, with a free-riding fringe
+     + $\#$ players in the treaty stays typically small
+
+
+

@@ -1,0 +1,502 @@
+# Commodity Taxation & Subsidization  {background-color="#049baa"}
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Introduction {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Introduction Taxation
+
+* important purpose: finance gov't expenditure (tax revenue)
+* intended and unintended allocative and distributive effects
+   + intended allocative: [Pigou]{.smallcaps} tax, 'sin' tax
+   + unintended allocative: excess burden
+   + intended distributive: income redistribution
+   + unintended(?) distributive: tax incidence
+   + joint with expenditure: macroeconomic effects of stabilization
+* optimal taxation: given a certain tax revenue goal of gov't, how to minimize the welfare loss from taxation?
+* derive 'optimal tax rules'
+
+* in what follows: consider market for one or two commodities (prices, quantities)
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Taxes and Their Market Consequences
+
+:::::: {.panel-tabset}
+
+#### Tax Distortion: Intuition
+
+consumer: yes-no decision of buying 1 apple
+
+* willing to pay: 1.20 EUR
+* shop: willing to sell at 1.00 EUR <br>
+  $\to$ economically useful transaction proceeds, welfare gain
+* tax revenue: 0
+
+\bigskip
+
+enter the gov't: tax 25%
+
+\bigskip
+
+* at 1.25 EUR, consumer does not buy, shop does not sell
+* transaction stalled, no welfare gain
+* tax revenue: 0
+
+\bigskip
+
+$\to$ same tax revenue, no welfare gain
+
+
+#### Aspects
+
+* Taxes change behavior, we can understand this through changing demand and supply schedules.
+* Taxes in partial equilibrium have two first-order consequences
+   + tax incidence: who bears the burden of the tax, consumers or producers? Question of pass-through
+   + deadweight loss (or excess burden): a welfare loss due to reduced economic activity
+* There are additional budgetary aspects, as increases in tax rates do not imply proportional increases in tax revenue.
+
+#### Results
+
+* the consequences depend primarily on the relative price (or tax rate) elasticities of demand and supply
+
+* economic incidence (who bears the tax burden) is independent of statutory or legal incidence (who pays the tax)
+
+* deadweight losses and tax incidence are associated with a number of neutrality results
+   + the form of taxation (ad valorem/sales or unit/specific tax) does not matter (given tax revenue)
+   + effects of tax rate changes are symmetric for tax increase and decreases
+   + subsidies are like negative taxes and follow the same analytical framework as taxes
+
+* there are differences depending on market structure (monopolies v competition)
+* there are differences between introduction of a tax and increasing an existing tax
+
+::::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Single Competitive Market {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Incidence: Who Bears the Burden of the Tax?
+
+* the burden falls often on both producers and consumers
+* *relative* price elasticities of demand and supply matter; recall
+
+::: {.callout-warning title="Elasticities" icon="false"}
+$$
+\eta^D = \frac{\mbox{d} D(p)}{\mbox{d} p}\cdot \frac{p}{Q};
+\qquad
+\eta^S = \frac{\mbox{d} S(p)}{\mbox{d} p}\cdot \frac{p}{Q}
+$$
+:::
+::: {.callout-important title="Core Result" icon="false"}
+the less elastic side of the market is more exposed to the tax-induced price change<br>
+[change in producer price $p_\tau^p$ due to tax change relative to change in consumer price $p_\tau^c$ due to tax change d$\tau$:]{style="font-size: 75%;"}
+$$\frac{\text d p^p_\tau/\text d \tau}{\text d p^c_\tau/\text d \tau} = \frac{\eta^D}{\eta^S}$$
+:::
+* hint: draw pictures for $\eta^D=0$, $\eta^D\to -\infty$, $\eta^S=0$ and $\eta^S\to \infty$ to see this
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Deadweight Loss and Elasticities
+
+* formally, can show that
+        $$\mathit{DWL} = 0.5 \cdot (\text d \tau)^2 \cdot   \color{blue}{\frac{\color{black}{\eta^D} \eta^S}{\eta^S - \eta^D}}\cdot Q_0/p_0$$
+* if $\text d \tau = \tau$ and $\eta^S = \infty$, such that
+        $$\lim_{\eta^S \to \infty} \color{blue}{\frac{\eta^S}{\eta^S-\eta^D}} = 1$$
+        then
+        \begin{equation}
+        \label{eq:DWLela}
+        \mathit{DWL} = 0.5 \cdot \tau^2 \cdot  \eta^D \cdot Q_0/p_0
+        \end{equation}
+* increasing an existing tax will increase the welfare loss by more than just the increase in tax rates
+* tax revenue is concave function of tax rate ([Laffer]{.smallcaps} curve)
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Base Diagrams
+
+:::::: {.panel-tabset}
+
+#### Specific tax
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/hvgsy0jome?embed" width="600" height="400" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+* specific taxes levies $\tau$ dollars per unit of the good
+* parallel shift of demand or supply (marginal cost) curve
+* often, specific taxes are subjected to sales taxes (tax-on-tax)
+* tax drives a wedge between producer $p^p_\tau$ and consumer price $p^c_\tau$
+* welfare loss / deadweight loss (DWL)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+
+#### Subsidy
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/hvgsy0jome?embed" width="600" height="400" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+* subsidies are negative taxes
+* producer $p^p_\tau$ and consumer price $p^c_\tau$ swap position compared to tax 
+* DWL obtains because change in consumer and producer surplus does not compensate fully for the amount of subsidy paid by gov't
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+#### Ad Valorem Tax
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/ekekjskjot?embed" width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+* sales taxes are typical ad valorem taxes (percentage on the (sales) value)
+* ad valorem taxes multiply the willingness to pay or marginal cost with a factor $1+t$
+* rotation of demand or supply (marginal cost) curve around the intersection with quantity axis
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### Elasticity
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-taxela >}} width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+* for introduction of a tax, the price elasticity (measured at the before-tax equilbrium) is important for tax incidence
+* for given supply curve / price elasticity of supply, an absolutely higher demand elasticity is associated with a lower tax burden for consumers
+* press toggle to see this
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### [Laffer]{.smallcaps} curve
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/b9jyp1zjqj?embed" width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+* in simple linear model, both tax revenue $T$ and DWL are quadratic functions of the tax rate $\tau$
+* since $T(\tau)$ is concave, policies that end up on the right side of the [Laffer]{.smallcaps} curve are clearly inefficient
+* e.g., when $\tau=0.8$ delivers the same tax revenue as $\tau=0.2$ but is associated with a DWL that is 32 times higher
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+
+::::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Market Structure {background-color="#acfaf7"}
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Monopoly
+
+
+:::::: {.panel-tabset}
+
+#### Specific Tax
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="45%"}
+
+* monopolist produces where $MC(Q_0)=MR(Q_0)$, prices at $p_0$, makes profit $\Pi_0$
+* tax as shift in demand induces production where $MC(Q_\tau)=MR(Q_\tau)$, and a price wedge $p_\tau^c$ v  $p_\tau^p$, with smaller profit $\Pi_\tau$
+* DWL: there is an initial DWL of monopoly
+* under taxation, the DWL will grow much more, since an existing DWL will be supplemented with a tax-DWL (distortion-upon-distortion)
+
+:::
+
+::: {.column width="55%"}
+
+{{< video images/TaxMono.mp4 >}}
+
+:::
+
+<!-- END multicolumn setup ................................................. -->
+::::
+
+#### Tax Shifting
+
+* in noncompetitive market structures, tax shifting as a statutory tax payer passing through a tax burden to the other side of the market cannot necessarily be characterized through a simple comparison of elasticities
+* for instance, if the monopolist were the statutory taxpayer, some, but not all of the burden, would be shifted to the consumers 
+* tax incidence: firm carries positive tax burden, despite $MC=0$ (**undershifting**)
+* depending on the shape of the demand function, **overshifting** may occur (consumer price rises much more with the tax than producer price)
+
+
+::::::
+
+
+
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Two Markets {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Allocative Effect: Excess Burden
+
+* partial taxes are distortionary because of substitution effects:<br> $\Delta$tax rates $\to$ $\Delta$relative prices $\to$ behavioral response <br>
+  i.a.w.: incentive to pursue activities that agents would not have pursued if the tax were absent
+* possible scenario: non-distortionary (general or lump-sum) tax, holding constant utility level
+
+::: {.callout-warning title="Excess Burden" icon="false"}
+
+burden that is higher than necessary, or <br>
+foregone tax revenue due to partial taxation
+
+:::
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Two Commodities
+#### (Disregarding supply side)
+
+:::::: {.panel-tabset}
+
+#### Case 1
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="45%"}
+
+::: {.callout-warning title="Excess Burden (Case 1)" icon="false"}
+Tax revenue not received due to distortionary taxation.
+Using non-distortionary taxes would have led to more tax revenue, holding constant the welfare level of the individual.
+:::
+
+* based on *equivalent variation* (EV)
+* EV compares budgets on after-tax indifference curve
+
+:::
+
+::: {.column width="55%"}
+
+{{< video images/EB1.mp4 >}}
+
+:::
+
+<!-- END multicolumn setup ................................................. -->
+::::
+
+#### Case 2
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="45%"}
+
+
+::: {.callout-warning title="Excess Burden (Case 2)" icon="false"}
+Extra amount of money that the government would have had to spend if it were to restore welfare by means of a non-distortionary subsidy when the relative prices were determined by the distortionary tax.
+:::
+
+* based on *compensating variation* (CV)
+* CV compares budgets on before-tax indifference curve
+
+:::
+
+::: {.column width="55%"}
+
+{{< video images/EB2.mp4 >}}
+
+:::
+
+<!-- END multicolumn setup ................................................. -->
+::::
+
+
+::::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Lessons Learned
+
+* partial taxes are distortionary since they induce a change of behavior: <br>
+   do a thing you otherwise would not have, even though you're being compensated for the change in purchasing power (income effect)
+* (income-)\alert{compensated demand} function matters for evaluation of welfare effects
+    + substitution effect matters for efficiency, even if counterbalanced by an income effect of the same size
+    + no excess burden if goods are perfect complements
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Welfare-Enhancing Taxes {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Externalities Illustrated
+
+::::: {.panel-tabset}
+
+#### Definition
+
+::: {.callout-note icon="false"  title="Externality"}
+effect of own economic activity on somebody else's without compensation payments that are accounted for in market prices
+:::
+
+* externalities are essentially unintended spillover effects
+* affect non-market participants (or `bystanders') 
+* externalities can
+     + be negative, positive, and/or interdependent
+     + affect production and/or consumption
+* in what follows, focus on pollution: firm pollutes while producing, consumers (as bystanders) suffer marginal damages from the pollution---which is assumed to be increasing in the level of production
+
+#### Graph
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{=html}
+ <iframe src={{< var desmos-fig-ext >}} width="450" height="650" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="60%"}
+
+* rational behavior: do not take into account social cost/benefits, only private cost/benefits
+* in market equilibrium:
+$$\text{marg. private cost} = \text{marg. private benefits}$$
+will have too much of a negative externality
+* policy solutions try to restore optimal allocation:
+$$\text{marg. social cost} = \text{marg. social benefits}$$
+* this does **not** imply: abolish all activity with externalities; even at optimal allocation there will be some level of externality present
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+### Policy: Pigou Tax
+
+::::: {.panel-tabset}
+
+#### Idea
+
+::: {.callout-note icon="false"  title="[A.C. Pigov]{.smallcaps}ian Tax"}
+Tax per unit on a polluting producer's output equal to the marginal damage it causes at the socially optimal level of production. Concept named after [A.C. Pigou]{.smallcaps} (1877--1959).
+:::
+
+* i.e., introduce a price on the externality that the polluter has to pay
+* [align]{.alert} marginal social cost of society and marginal private cost of the polluter<br><br>
+* main problem: implementation 
+     * get polluters and pollutees to truthfully reveal their private cost and benefits so that taxes can be set optimally
+
+#### Graph
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-pigou >}} width="500" height="650" style="border: 1px solid #ccc" ></iframe>
+```
+:::
+
+::: {.column width="50%"}
+
+* Tax increases MPC such that polluters reduce their economic activity
+     * Optimal tax reduces activity such that the welfare loss from the externality is exactly removed
+* Subsidy on abatement likewise increases MPC when paid on pollution reduction exceeding a prespecified benchmark; here, the marginal value of not abating carries a cost of foregone subsidy
+     * Optimal subsidy increases abatement such that the welfare loss from the externality is exactly removed
+
+::: {.callout-tip title="Get the hang of Pigovian Taxes!" icon="false"}
+* Choose tax or subsidy and then increase the rate to the optimum.
+:::
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+:::::
+
+
+
+## Conclusions and Summary {.unnumbered background-color="#acfaf7"}
+
+### Summary
+
+> ''\ldots in this world nothing can be said to be certain, except death and taxes'' <br>
+> Benjamin [Franklin]{.smallcaps}, 1789
+
+* taxes are the main financing tool for gov't expenditure
+* they have desirable, but also undesirable consequences
+* tax incidence: the relative inelastic side of the market bears the brunt of the tax burden
+* excess burdens typically increase with price elasticities
+* in noncompetitive market structures, results may need modification
+* substitution effects are the underlying causes of the inefficiencies
+* welfare-enhancing taxation can result when tackling externalities
+

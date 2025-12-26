@@ -1,0 +1,398 @@
+# Optimality and Heterogeneity  {background-color="#049baa"}
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Second Best & Optimal Taxation {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Second Best 
+
+::::: {.panel-tabset}
+
+#### Lump Sum
+
+* 2nd theorem: 'more equity' (equality) involves lump-sum redistribution
+* lump sum: form of taxation that is not tied to individual's choices (e.g.: income,  consumption, wealth), but only to the identity of the tax payer
+    + tax payer cannot influence his tax bill
+    + unrealistic; closest example: [UK Poll Tax](https://en.wikipedia.org/wiki/Poll_tax_(Great_Britain)){target="_blank"} found [little political support](https://en.wikipedia.org/wiki/Poll_tax_riots){target="_blank"} 
+    + needs to be heterogeneous since goal is redistribution  (some lose, some gain)
+    + needs to be based on private preference information
+* reason: do not want substitution effects, as they lead to welfare losses
+
+::: {.callout-note icon="false" title="'First Theorem of Public Finance': There is no such thing as a lump-sum tax."}
+::: 
+
+* i.o.w.: all taxation is distortionary
+
+#### [Okun]{.smallcaps}'s Leaky Bucket
+
+Consider a redistribution program that takes from the rich and gives to the poor.
+
+> <q> [&hellip;] the money must be carried from the rich to the poor in a leaky bucket.  Some of it will simply disappear in transit, so the poor will not receive 
+all the money that is taken from the rich. [&hellip;]
+> I want you to decide how much leakage you would accept and still support [this plan]. Suppose 10 percent leaks out [&hellip;] Should society still make the switch? If 50 percent leaks out? 75 percent? [&hellip;] Where would you draw the line? Your answer cannot be right or wrong. [&hellip;]
+>Of course, the leak represents an inefficiency. The inefficiencies of real-world redistribution include the adverse effects on the economic incentives of the rich and the poor, and the administrative costs of tax-collection and transfer programs.<br>
+$\qquad\qquad\qquad\qquad\qquad$ [Arthur M. Okun]{.smallcaps}, 1975, <br>
+$\qquad\qquad\qquad\qquad\qquad$ *Equality and Efficiency: The Big Tradeoff.*
+
+#### Illustration
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* efficiency losses shift the UPF inwards
+* second best $S$: maximize social welfare subject to the constraint that efficiency  losses are unavoidable
+* trade-off: equity $\uparrow$ $\Rightarrow$ redistribution $\uparrow$ $\Rightarrow$  taxes $\uparrow$ $\Rightarrow$  welfare costs $\uparrow$
+
+:::
+
+::: {.column width="50%"}
+
+![](images/2ndBest.png)
+
+:::
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+#### Implications
+
+Implications for the Cost of Public Activity
+
+* if all taxation is distortionary, then public finance-relevant activities will be associated with the (social) welfare cost of raising taxes
+
+* these [social cost of public funds]{.alert} should be held as small as possible, but are unavoidable
+
+* denote the marginal social cost of public funds by $\lambda$, then we say that tax-financing a public project of \$1 costs \$1+$\lambda$ in terms of real economic resources
+    + $\lambda=0$ first-best
+    + $\lambda>0$ second-best
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Inverse Elasticity Rule
+
+::::: {.panel-tabset}
+
+#### Idea 
+
+* many markets & economic activities $\to$ many possibilities to tax
+* each tax leads to revenue and excess burdens
+* if we add it all up, we get total tax revenue, and a total welfare loss of taxation
+* the total revenue could be a *target value* of fiscal policy, a **revenue requirement** to finance public tasks
+* but: we can choose each time how to tax, how much to tax and whom to tax 
+* all of this may have an impact on revenue and excess burdens in individual markets
+* so: what's the 'optimal' **tax mix** that
+    + minimizes the total welfare loss
+    + while meeting the revenue requirement?
+
+#### Solution
+
+::: {.callout-note icon="false" title="Inverse Elasticity Rule."}
+
+The total welfare loss of taxation is being minimized when<br>
+tax rates are inversely proportional to the price elasticity of demand<br>
+(holding constant the price elasticity of supply).
+
+::: 
+
+* a given tax revenue should be achieved using a tax-mix where commodities/activities with the lowest price elasticities are being taxed most 
+* smallest total *allocative* distortion
+
+#### Example 1
+
+* 2 commodity markets, 2 tax rates: $\tau_1$, $\tau_2$
+* deadweight losses: $DWL_1(\tau_1)$ and $DWL_2(\tau_2)$; and tax revenues: $T_1(\tau_1)$, $T_2(\tau_2)$ 
+* goal: minimize total deadweight loss $DWL_1+DWL_2$<br> subject to total tax revenue $T_1+T_2$ being a constant $R$ (revenue constraint)
+* tax rates are choice variables (policy parameters)
+* technique: Lagrange (with multiplier $\lambda$)
+
+$$\min_{\tau_1,\tau_2,\lambda}  {\cal L} = DWL_1(\tau_1)+DWL_2(\tau_2) + \lambda (R - T_1(\tau_1)-T_2(\tau_2))$$
+
+* interpretation $\lambda$: shadow price of tax revenue in terms of efficiency losses
+
+#### (cont'd.)
+
+$$\min_{\tau_1,\tau_2,\lambda}  {\cal L} = \overbrace{10\tau_1^2}^{DWL_1(\tau_1)}+\overbrace{15\tau_2^2}^{DWL_2(\tau_2)} + \lambda (\overbrace{4.9}^{R} - \overbrace{[8\tau_1-5\tau_1^2]}^{T_1(\tau_1)}-\overbrace{[10\tau_2-7.5\tau_2^2]}^{T_2(\tau_2)})$$
+
+FOCs<br>
+\begin{eqnarray*}
+\frac{\partial {\cal L} }{\partial \tau_1}  &=&20\tau_1-\lambda (8-10\tau_1)=0\\
+\frac{\partial {\cal L} }{\partial \tau_2}  &=&30\tau_2-\lambda (10-15\tau_2)=0\\
+\frac{\partial {\cal L} }{\partial \lambda} &=& 4.9-[8\tau_1-5\tau_1^2]-[10\tau_2-7.5\tau_2^2]=0
+\end{eqnarray*}
+
+solution: $\tau^\star_2=0.333$ and $\tau^\star_1=0.4$
+
+#### Example 2
+
+* for *ad valorem* tax (`$1+t_j$'), DWL can be written 
+$$DWL_j = \frac{1}{2} t_j^2 \cdot Q_{tj} p_{j}\cdot \eta_j^D,\quad j=1,2$$ 
+
+* together with $T_j = t_j \cdot Q_{tj} p_{j}$, get
+$$\min_{t_1,t_2,\lambda}  {\cal L} = \frac{1}{2} t_1^2 \cdot Q_{t1} p_{1}\cdot \eta_1^D+\frac{1}{2} t_2^2 \cdot Q_{t2} p_{2}\cdot \eta_2^D + \lambda (R-t_1 \cdot Q_{t1} p_{1}-t_2 \cdot Q_{t2} p_{2})$$
+
+* then the FOCs lead to $t_1\eta^D_1=\lambda$ and $t_2\eta^D_2=\lambda$        
+
+* from which follows
+        $$\frac{t_1}{t_2}=\frac{\eta^D_2}{\eta^D_1}.$$
+
+:::::
+
+
+### Further Aspects
+
+::::: {.panel-tabset}
+
+#### Critique
+
++ inverse elasticity rule suggests market-specific tax rates
+    + heterogeneous taxation is second-best efficient
+    + based on [Paretian]{.smallcaps} Welfare concept
++ involves complicated, intransparent tax rate system when there are many goods
++ high information and compliance cost for taxpayers
++ simplifies: no direct link between markets, e.g. $DWL_1(\tau_1)\neq DWL_1(\tau_1,\tau_2)$
++ [Paretian]{.smallcaps} Welfare does not take into account equity considerations
+    + e.g., tax immobile tax payers, shift burden to those who will not substitute away
+
+#### Equity
+
+* maximize SWF, e.g., in  two-consumer ($A$, $B$) economy
+        $$W(u^A(q^A_1,q^A_2),u^B(q^B_1,q^B_2))$$
+        subject to the constraint that tax revenue must be collected from both consumers' demand for all goods
+* commodity demands are $q^i_j, i=A,B; j=1,2$
+* explicit use of SWF allows trading off interest between consumers (equity)
+
+#### Social Welfare Weights
+
+* maximization of SWF,
+        $$\max_{\tau_1,\tau_2} W(u^A(q^A_1(\tau_1),q^A_2(\tau_2)),u^B(q^B_1(\tau_1),q^B_2(\tau_2)))$$
+        will require assessing social welfare weights per individual; e.g. FOC for $\tau_1$ involve
+        $$\frac{\text{d} W}{\text{d}\tau_1} = \underbrace{\frac{\partial W}{\partial u^A} \cdot \frac{\partial u^A}{\partial q_1^A}}_{\equiv \omega^A_1} 
+        \cdot \frac{\partial q_1^A}{\partial \tau_1}
+        + \frac{\partial W}{\partial u^B} \cdot \frac{\partial u^B}{\partial q_1^B}
+        \cdot \frac{\partial q_1^B}{\partial \tau_1}
+        $$
+* $\omega^A_1$ (and similarly, $\omega^B_1$) is a social marginal welfare weight for $A$;
+        i.e., the value that society puts on providing an additional $ of consumption of good 1 to individual $A$
+* note: it is customary to use marg.\ utility of income for ${\partial u^A}/{\partial q_j^A}$
+
+
+#### [Ramsey]{.smallcaps} Rule
+
+* in more general setting, demand for all goods could depend on prices of all other goods
+* hence, dependence on all tax rates in the system
+* changing a single tax rate has implications through the change of relative prices for all markets
+* without proof (see H&M book for derivation:)
+
+::: {.callout-note icon="false" title="[Ramsey]{.smallcaps} Rule."}
+
+Set optimal commodity tax rates such that *compensated demand* for each good is reduced in the same proportion relative to the before-tax position.
+
+:::
+
+* recall: compensated demand nets out income effects (substitution effects matter for efficiency!)
+* observe: simplest setting abstracts from equity considerations (demand system of a single consumer)
+
+
+:::::
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Sin Taxes {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Behavioral Aspects
+
+::::: {.panel-tabset}
+
+#### Internalities
+
+* internalities are 'within-person externalities' -- effects of one's own current behavior on one's own future welfare, or welfare in a different state of nature
+* mostly relevant in intertemporal contexts that view an individual at different points in time has having 'different selves'
+    + example: the present self may choose to smoke today, even though the future self may want the present self to quit today; this way, the present self causes a spillover effect on the future self (who is less likely to quit tomorrow)
+* policy response can make current measures salient and refer to future consequences
+    + example: very high cigarette taxes combined with shock-images
+
+#### Psychology
+
+* economic psychologists emphasize a distinction of utilities
+    + decision utility
+        - utility on which an individual takes actions, resulting in observed choices
+    + experienced utility
+        - utility the individual uses to assess actual welfare of a choice made
+* when decision and experience are separated in time, and when individual display behavioral biases, the difference can lead to
+    + making a choice now
+    + regretting it later (welfare loss)
+
+* note: neoclassical approach does not distinguish different selves (time consistency)
+* corollary: revealed preference paradigm -- what you want shows in what you do
+
+#### Graph
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* in terms of welfare measurement under demand function
+* blue: observed marginal private benefit: results from decision utility
+* red: true marginal private benefit: results from experienced utility
+
+::: 
+
+::: {.column width="50%"}
+
+![](images/mpbobserved.png)
+
+::: 
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+#### Policy
+
+* behavioral tendencies change the translation of externalities into welfare losses
+    + they can mitigate or exarcerbate the problem by over-/understating relevant (marginal) costs and benefits
+    + depends on context
+* behavioral tendencies can also generate externalities directly        
+* internalities may compound the analytical complexity
+* consumer heterogeneity big issue: problem of aggregation
+* difficult to make clear-cut policy prescriptions
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Obesity Women
+
+<iframe src="https://ourworldindata.org/grapher/share-of-females-defined-as-obese" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Health & Taxes
+
+::::: {.panel-tabset}
+
+#### Health
+
+* sugar intake associated with severe health consequences
+* type-2 diabetes, hypertension, cardiovascular diseases, and cancer, are leading causes of disability and death
+* significant increase in health care costs, lost wages due to illnesses and disability, reduced work productivity, earlier retirement, etc.\
+* increasing obesity prevalence is now a bigger problem in low- and middle-income countries than in high-income countries
+* 2015, 1/3 of global population overweight or obese, rapidly increasing prevalence
+* prevalence of overweight or obesity:
+    + global rise by 60\% since 1990 for preschool-aged children
+    + example Mexico: above 40\% in older children
+
+#### Taxes
+
+* taxes change behavior
+* specific commodity taxes: target specific commodities (e.g., diesel, gasoline), and constant per unit of the consumed good or substance (e.g., 80c/$\ell$)
+* also associated with goods of which gov't wants to discourage consumption, hence the name 'sin' tax (e.g., alcohol, nicotine -- aka demerit goods)
+* recently: sugar tax, in response to secular rise in sugar consumption and causal links to adverse health behaviors and outcomes 
+* if those outcomes affect others (directly or indirectly, e.g., via inflated health insurance premiums), sin taxes are meant to correct externalities
+* if those outcomes affect only the consumer (or a 'future self' of that person), sin taxes are meant to correct internalities
+
+#### Equity
+
+* strong negative association between sugar-sweetened beverage (SSB) consumption and income
+* tax incidence of SSB will fall predominantly on the poor
+* however: some evidence that sin taxes work and reduce consumption
+* policy issue: how to trade off the welfare gains from SSB taxation and the distributional consequences?
+* aspect: both gains and burdens concentrated in similar demographics
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Sin Tax with Full Pass-Through
+#### Individual Consumer
+
+![](images/intern.mp4)
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Further Considerations
+
+::::: {.panel-tabset}
+
+#### Aggregation
+
+* need to aggregate from individual consumer to market level
+* aggregation of externalities across consumers: weigh with difference between marginal welfare weight $\omega$ and value of public funds $\lambda$ (since sin tax reduces public revenue distortion: e.g., less sugar consumption -- better health -- lower public health cost)
+* aggregation of internalities across consumers: weigh with marginal welfare weight $\omega$ (disregard public funds, as no effect on, e.g., public health cost)
+
+#### Welfare Weights
+
+social marginal welfare weights $\omega$
+
+* inequality concern: the poor may have higher weights in a social welfare function        
+* incidence: if the poor also consume more sugar, the sin tax falls disproportionately on them        
+* if internalities are important, they may at the same time benefit disproportionately
+
+#### Correlations
+
+* externalities:  correlation between individual demand elasticity and individual's contribution to externality
+    + possibly positive: consumers <br> generating the largest externalities are most responsive to the tax
+        - then, externality benefits of sugar tax are larger
+* internalities: negative correlation sugar consumption and income: 
+    + tax burden regressive
+        - but: internality benefits of sugar tax likely progressive
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Aspects for Optimal Tax Policy In Practice
+
+::::: {.panel-tabset}
+
+#### Welfare
+
+welfare assessment and optimal taxation depend on 
+
+* whether externalities are present
+* whether internalities are present
+* who pays the taxes and who benefits or is harmed by ex/internalities
+* demand (and supply) elasticities / pass-through
+* preference heterogeneity across the income distribution
+* complementarity/substitutability with untaxed, sugar-based consumption goods
+* leakage effects (e.g., cross-border shopping)
+
+#### Policy
+
+* optimality suggests: highly complex tax system
+
+* issue: conflicts with principles of good taxation
+    + transparency
+    + simplicity
+    + universality
+    + neutrality
+
+* to keep it simple (manageable):
+    + tax (physical) sugar content
+    + apply to broad tax base (not just drinks, not just locally)
+
+#### Empirics
+
+* determining the size of demand elasticities, as well as the extent of internalities, externalities and regressivity is
+    + very complicated        
+    + requires very detailed microeconomic data
+    + suitable empirical approaches
+* authors of the study come up with a rough advice of 1.5 cents per ounce (5.4 c/100 g)
+
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+## Conclusions and Summary {.unnumbered background-color="#acfaf7"}
+
+### Summary
+
+* Lump-sum taxes and transfers, as required by the Second Theorem do not exist, hence distortionary taxation allows at most second best social choice (efficiency-equity tradeoff)
+* good tax policy-making is in general complex, but also needs transparency
+* elasticities can be used to guide the choice which activities to tax most
+* yet, equity considerations may suggest that the income position of households should be taken into account
+* taxes can be used in addition to protect consumers from themselves, but normative judgment involved (do policy makers think that consumers are not acting in their own best interest)?
+
+
+

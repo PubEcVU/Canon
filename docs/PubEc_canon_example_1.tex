@@ -1,0 +1,538 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+
+\title{Edgeworth Box with Scaled Cobb--Douglas Utilities}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Preferences and Endowments}
+
+There are two agents, $A$ and $B$, and two goods. Total endowments are normalized to
+\[
+x_A + x_B = 1,
+\qquad
+y_A + y_B = 1.
+\]
+
+Preferences are given by scaled Cobb--Douglas utility functions.
+
+\paragraph{Agent A}
+\[
+u_A(x_A,y_A)
+=
+\left(x_A^{\alpha}y_A^{1-\alpha}\right)^s,
+\qquad \alpha=0.25.
+\]
+
+\paragraph{Agent B}
+\[
+u_B(x_B,y_B)
+=
+\left(x_B^{\beta}y_B^{1-\beta}\right)^s,
+\qquad \beta=0.75.
+\]
+
+Equivalently,
+\[
+u_A = x_A^{\alpha s}y_A^{(1-\alpha)s},
+\qquad
+u_B = x_B^{\beta s}y_B^{(1-\beta)s}.
+\]
+
+\section{Marginal Rates of Substitution}
+
+For agent $A$,
+\[
+\text{MRS}_A
+=
+\frac{\partial u_A/\partial x_A}{\partial u_A/\partial y_A}
+=
+\frac{\alpha}{1-\alpha}\frac{y_A}{x_A}.
+\]
+
+For agent $B$,
+\[
+\text{MRS}_B
+=
+\frac{\partial u_B/\partial x_B}{\partial u_B/\partial y_B}
+=
+\frac{\beta}{1-\beta}\frac{y_B}{x_B}.
+\]
+
+Note that the scaling parameter $s$ cancels out and does not affect marginal rates of substitution.
+
+
+\section{Contract Curve}
+
+Pareto efficiency requires $\text{MRS}_A=\text{MRS}_B$. With $a=0.25$ and $\beta=0.75$,
+\[
+\frac{1}{3}\frac{y_A}{x_A}
+=
+3\frac{1-y_A}{1-x_A}.
+\]
+
+Rearranging,
+\[
+y_A(1-x_A)=9x_A(1-y_A).
+\]
+
+Solving for $y_A$ yields the contract curve:
+\[
+\boxed{
+y_A = \frac{9x_A}{1+8x_A},
+\qquad x_A\in(0,1).
+}
+\]
+
+\section{Utilities Along the Contract Curve}
+
+Substitute $y_A=\frac{9x}{1+8x}$.
+
+\paragraph{Agent A}
+\[
+\begin{aligned}
+u_A(x)
+&=
+\left(
+x^{1/4}
+\left(\frac{9x}{1+8x}\right)^{3/4}
+\right)^s \\[4pt]
+&=
+\boxed{
+9^{3s/4}
+\frac{x^s}{(1+8x)^{3s/4}}
+}.
+\end{aligned}
+\]
+
+\paragraph{Agent B}
+\[
+\begin{aligned}
+u_B(x)
+&=
+\left(
+(1-x)^{3/4}
+\left(\frac{1-x}{1+8x}\right)^{1/4}
+\right)^s \\[4pt]
+&=
+\boxed{
+\frac{(1-x)^s}{(1+8x)^{s/4}}
+}.
+\end{aligned}
+\]
+
+\section{Core (Pareto-Improving Segment)}
+
+Let the initial endowment be $E=(x_e,y_e)$.
+
+Endowment utilities are
+\[
+u_A^e = (x_e^{1/4}y_e^{3/4})^s,
+\qquad
+u_B^e = ((1-x_e)^{3/4}(1-y_e)^{1/4})^s.
+\]
+
+The core is the subset of the contract curve such that both agents weakly gain.
+
+\subsection*{Endpoints}
+
+The lower endpoint $x_L$ satisfies
+\[
+\boxed{
+9^{3s/4}
+\frac{x_L^s}{(1+8x_L)^{3s/4}}
+=
+(x_e^{1/4}y_e^{3/4})^s
+}.
+\]
+
+The upper endpoint $x_U$ satisfies
+\[
+\boxed{
+\frac{(1-x_U)^s}{(1+8x_U)^{s/4}}
+=
+((1-x_e)^{3/4}(1-y_e)^{1/4})^s
+}.
+\]
+
+The core is therefore
+\[
+\boxed{
+x_L \le x_A \le x_U,
+\qquad
+y_A=\frac{9x_A}{1+8x_A}.
+}
+\]
+
+\section{Utility Possibility Frontier}
+
+The utility possibility frontier (UPF) is the image of the contract curve in utility space.
+
+\[
+\boxed{
+\begin{aligned}
+u_A(x) &= 9^{3s/4}\frac{x^s}{(1+8x)^{3s/4}},\\[4pt]
+u_B(x) &= \frac{(1-x)^s}{(1+8x)^{s/4}},
+\qquad x\in(0,1).
+\end{aligned}
+}
+\]
+
+\section{Key Observation}
+
+The scaling parameter $s$ affects utility levels but not:
+\begin{itemize}
+  \item the contract curve,
+  \item the core allocations,
+  \item or Pareto efficiency.
+\end{itemize}
+
+Only ordinal preferences (MRS) matter for efficiency.
+
+
+\newpage
+
+\section*{same, now with two scaling parameters}
+
+\section{Preferences and Endowments}
+
+There are two agents, $A$ and $B$, and two goods. Total endowments are normalized to
+\[
+x_A + x_B = 1,
+\qquad
+y_A + y_B = 1.
+\]
+
+Preferences are given by Cobb--Douglas utilities with agent-specific scaling parameters.
+
+\paragraph{Agent A}
+\[
+u_A(x_A,y_A)
+=
+\left(x_A^{\alpha}y_A^{1-\alpha}\right)^{s_A},
+\qquad \alpha=0.25.
+\]
+
+\paragraph{Agent B}
+\[
+u_B(x_B,y_B)
+=
+\left(x_B^{\beta}y_B^{1-\beta}\right)^{s_B},
+\qquad \beta=0.75.
+\]
+
+Equivalently,
+\[
+u_A = x_A^{\alpha s_A}y_A^{(1-\alpha)s_A},
+\qquad
+u_B = x_B^{\beta s_B}y_B^{(1-\beta)s_B}.
+\]
+
+\section{Marginal Rates of Substitution}
+
+For agent $A$,
+\[
+\text{MRS}_A
+=
+\frac{\partial u_A/\partial x_A}{\partial u_A/\partial y_A}
+=
+\frac{\alpha}{1-\alpha}\frac{y_A}{x_A}.
+\]
+
+For agent $B$,
+\[
+\text{MRS}_B
+=
+\frac{\partial u_B/\partial x_B}{\partial u_B/\partial y_B}
+=
+\frac{\beta}{1-\beta}\frac{y_B}{x_B}.
+\]
+
+\paragraph{Key observation}
+The scaling parameters $s_A$ and $s_B$ cancel out.  
+Thus, Pareto efficiency depends only on $\alpha$ and $\beta$.
+
+\section{Contract Curve}
+
+Pareto efficiency requires $\text{MRS}_A=\text{MRS}_B$. Substituting
+$\alpha=0.25$ and $\beta=0.75$:
+\[
+\frac{1}{3}\frac{y_A}{x_A}
+=
+3\frac{1-y_A}{1-x_A}.
+\]
+
+Rearranging,
+\[
+y_A(1-x_A)=9x_A(1-y_A).
+\]
+
+Solving for $y_A$ yields the contract curve:
+\[
+\boxed{
+y_A = \frac{9x_A}{1+8x_A},
+\qquad x_A\in(0,1).
+}
+\]
+
+\section{Utilities Along the Contract Curve}
+
+Substitute $y_A=\frac{9x}{1+8x}$.
+
+\paragraph{Agent A}
+\[
+\begin{aligned}
+u_A(x)
+&=
+\left(
+x^{\alpha}
+\left(\frac{9x}{1+8x}\right)^{1-\alpha}
+\right)^{s_A} \\[4pt]
+&=
+\boxed{
+9^{(1-\alpha)s_A}
+\frac{x^{s_A}}{(1+8x)^{(1-\alpha)s_A}}
+}
+\qquad (\alpha=0.25).
+\end{aligned}
+\]
+
+\paragraph{Agent B}
+\[
+\begin{aligned}
+u_B(x)
+&=
+\left(
+(1-x)^{\beta}
+\left(\frac{1-x}{1+8x}\right)^{1-\beta}
+\right)^{s_B} \\[4pt]
+&=
+\boxed{
+\frac{(1-x)^{s_B}}{(1+8x)^{(1-\beta)s_B}}
+}
+\qquad (\beta=0.75).
+\end{aligned}
+\]
+
+\section{Core (Pareto-Improving Segment)}
+
+Let the initial endowment be $E=(x_e,y_e)$.
+
+Endowment utilities:
+\[
+u_A^e = (x_e^{\alpha}y_e^{1-\alpha})^{s_A},
+\qquad
+u_B^e = ((1-x_e)^{\beta}(1-y_e)^{1-\beta})^{s_B}.
+\]
+
+\subsection*{Endpoints of the Core}
+
+The lower endpoint $x_L$ is defined by agent $A$ being indifferent:
+\[
+\boxed{
+9^{(1-\alpha)s_A}
+\frac{x_L^{s_A}}{(1+8x_L)^{(1-\alpha)s_A}}
+=
+(x_e^{\alpha}y_e^{1-\alpha})^{s_A}
+}.
+\]
+
+The upper endpoint $x_U$ is defined by agent $B$ being indifferent:
+\[
+\boxed{
+\frac{(1-x_U)^{s_B}}{(1+8x_U)^{(1-\beta)s_B}}
+=
+((1-x_e)^{\beta}(1-y_e)^{1-\beta})^{s_B}
+}.
+\]
+
+The core is therefore:
+\[
+\boxed{
+x_L \le x_A \le x_U,
+\qquad
+y_A=\frac{9x_A}{1+8x_A}.
+}
+\]
+
+\section{Utility Possibility Frontier}
+
+The utility possibility frontier (UPF) is the image of the contract curve in utility space.
+
+\[
+\boxed{
+\begin{aligned}
+u_A(x) &= 9^{(1-\alpha)s_A}
+\frac{x^{s_A}}{(1+8x)^{(1-\alpha)s_A}}, \\[4pt]
+u_B(x) &= \frac{(1-x)^{s_B}}{(1+8x)^{(1-\beta)s_B}},
+\qquad x\in(0,1).
+\end{aligned}
+}
+\]
+
+\section{Summary}
+
+\begin{itemize}
+  \item The contract curve is independent of $s_A$ and $s_B$.
+  \item The core allocations are unchanged by scaling.
+  \item Scaling parameters affect only the \emph{cardinal representation} of utilities.
+  \item Pareto efficiency depends solely on marginal rates of substitution.
+\end{itemize}
+
+
+\newpage
+
+\section*{same, now with 1 scaling parameter for A, and a=b}
+
+
+\section{Preferences and Endowments}
+
+There are two agents, $A$ and $B$, and two goods. Total endowments are normalized to
+\[
+x_A + x_B = 1,
+\qquad
+y_A + y_B = 1.
+\]
+
+Preferences are given by Cobb--Douglas utilities with one agent-specific scaling parameter.
+
+\paragraph{Agent A}
+\[
+u_A(x_A,y_A)
+=
+\left(x_A^{\alpha}y_A^{1-\alpha}\right)^{s_A},
+\qquad \alpha=0.5.
+\]
+
+\paragraph{Agent B}
+\[
+u_B(x_B,y_B)
+=
+\left(x_B^{\beta}y_B^{1-\beta}\right),
+\qquad \beta=0.5.
+\]
+
+Equivalently,
+\[
+u_A = (x_Ay_A)^{\frac12 s_A}
+\qquad
+u_B = (x_By_B)^{\frac12}
+\]
+
+\section{Marginal Rates of Substitution}
+
+For agent $A$,
+\[
+\text{MRS}_A
+=
+\frac{\partial u_A/\partial x_A}{\partial u_A/\partial y_A}
+=
+\frac{y_A}{x_A}.
+\]
+
+For agent $B$,
+\[
+\text{MRS}_B
+=
+\frac{\partial u_B/\partial x_B}{\partial u_B/\partial y_B}
+=
+\frac{1-y_A}{1-x_A}.
+\]
+
+\paragraph{Key observation}
+The scaling parameters $s_A$ cancels out.  
+
+\section{Contract Curve}
+
+Pareto efficiency requires $\text{MRS}_A=\text{MRS}_B$. Substituting
+$\alpha=0.5$ and $\beta=0.5$:
+\[
+\frac{y_A}{x_A}
+=
+\frac{1-y_A}{1-x_A}.
+\]
+
+Rearranging,
+\[
+y_A(1-x_A)=x_A(1-y_A).
+\]
+
+Solving for $y_A$ yields the contract curve:
+\[
+\boxed{
+y_A = x_A,
+\qquad x_A\in(0,1).
+}
+\]
+
+\section{Utilities Along the Contract Curve}
+
+Substitute $y_A=x$.
+
+\paragraph{Agent A}
+\[
+u_A(x)
+=
+x^{s_A}
+\]
+
+\paragraph{Agent B}
+\[
+u_B(x)=1-x
+\]
+
+\section{Core (Pareto-Efficient Segment)}
+
+Let the initial endowment be $E=(x_e,y_e)$.
+
+Endowment utilities:
+\[
+u_A^e = (x_ey_e)^{\frac12 s_A},
+\qquad
+u_B^e = ((1-x_e)(1-y_e))^{\frac12}.
+\]
+
+\subsection*{Endpoints of the Core}
+
+The lower endpoint $(x_L,y_L)$ is defined by agent $A$ being indifferent:
+\[
+x_L=y_L =(u_A^e)^{\frac{1}{s_A}}
+\]
+
+The upper endpoint $(x_U,y_U)$ is defined by agent $B$ being indifferent:
+\[
+x_U=y_U
+=
+1- u_B^e
+\]
+
+The core is therefore:
+\[
+x_L \le x_A \le x_U,
+\qquad
+y_A=x_A.
+\]
+
+\section{Utility Possibility Frontier}
+
+The utility possibility frontier (UPF) is the image of the contract curve in utility space.
+
+\[
+u_A(x) = (1-u_B(x))^{s_A}
+\]
+
+\section{Summary}
+
+\begin{itemize}
+  \item The contract curve is independent of $s_A$ and $s_B$.
+  \item The core allocations are unchanged by scaling.
+  \item Scaling parameters affect only the \emph{cardinal representation} of utilities.
+  \item Pareto efficiency depends solely on marginal rates of substitution.
+\end{itemize}
+
+
+
+\end{document}

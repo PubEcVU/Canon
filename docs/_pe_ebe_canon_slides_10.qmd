@@ -1,0 +1,877 @@
+# Inequality, Poverty, and Policy  {background-color="#049baa"}
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Inequality {background-color="#acfaf7"}
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Inequality of Income, Consumption or Wealth
+
+* to quantify inequality, often one uses microdata on (household) income
+* this could be survey or administrative data
+     + since the introduction of the income tax, about 100 years ago, governments know who reports how much income, and they keep administrative registers
+* consumption is only available from survey data, and often preferred in the context of developing countries
+     + smallholder farmers (consumer-producers) may consume what they produce, their market income may underestimate their welfare levels
+     + self-employment is partly associated with income tax evasion
+     + consumption tends to fluctuate less as households engage in consumption smoothing over time, and across members of the family or household
+* recent attention to wealth inequality, as microeconomic survey data became available, but since many countries do not have a comprehensive wealth tax, reliable measures of wealth at the micro level are scarce
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Statistical Distributions
+
+::::: {.panel-tabset}
+
+#### PDF, CDF
+
+* measuring inequality is about describing and quantifying inequality of some distribution of a variable of interest (income, wealth, consumption) in statistical terms
+* let $Y$ denote the variable of interest
+* main idea: take the values $Y$ (or a random sample) as given and study the aspects of its distribution that tell how 'different' people are from one another
+* if $Y$ is continuously distributed, then its distribution can be represented by 
+     + a probability density function (pdf) $f_Y(y)$, or 
+     + a cumulative distribution function (cdf) $F_Y(y)=\int_{\min\{y\}}^y f(z) \text{d}z$
+* statistical distributions are often characterized by their *moments* (such as mean, $\mu$, standard deviation, $\sigma$, and many others)
+
+#### Graph
+
+::: {.callout-tip icon="false" title="Play with the Normal Distribution, change standard deviation $\sigma$"}
+:::
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-pdf >}} width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-cdf >}} width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+
+:::
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+:::::
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### [Lorenz]{.smallcaps} Curve and [Gini]{.smallcaps} Coefficient
+
+::::: {.panel-tabset}
+
+#### Description
+
+* most popular measure for inequality are [Gini]{.smallcaps} coefficient and [Lorenz]{.smallcaps} curve $\Lambda$
+* $\Lambda$ encompasses all values of the distribution and can be derived from the pdf or cdf $F$:
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+$${\Lambda(F)={\frac {\int _{0}^{F}F^{-1}(z)\,dz}{\int _{0}^{1}F^{-1}(z)\,dz}}}$$
+:::
+::: {.column width="50%"}
+
+::: {.callout-important icon="false" title="We shall derive $\Lambda$ graphically in class."}
+:::
+
+:::
+::::
+<!-- end multicolumn setup ................................................ -->
+
+* starting point are the values of $Y$ in *ascending* order
+* determine $p$, the cumulative percentile of individuals considered (runs from 0 to 100\%)
+* $\Lambda$ measures for each $p$ the cumulative share of income in total income  (runs from 0 to 100\%)
+* $\Lambda$ is typically below the 45$^\circ$line, monotonically increasing and convex 
+* [Gini]{.smallcaps} coefficient of inequality is based on the cumulative difference between the line of equality and the [Lorenz]{.smallcaps} curve
+
+#### Illustration
+ 
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/lorenz1.png)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/lorenz2.png)
+
+:::
+
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+#### Alternative Measures
+
+There are many different statistical summary measures of inequality. The following are examples of measures conforming to the
+
+::: {.callout-note title="[Pigou-Dalton]{.smallcaps} Principle" icon="false"}
+
+under a transfer from a rich to a poor individual that preserves both ranking of individuals and total income, inequality must decrease.
+
+:::
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="45%"}
+
+\begin{eqnarray*}
+\mbox{CV}   &=& \frac{\sigma}{\mu\sqrt{N-1}} \\
+\mbox{Gini} &=& \frac{1}{2N^2\mu} \sum_i \sum_j | y_i-y_j| 
+\end{eqnarray*}
+
+
+:::
+
+::: {.column width="55%"}
+
+
+\begin{eqnarray*}
+\mbox{Theil} &=& \frac{1}{N \ln N} \sum \frac{y_i}{\mu} \ln \frac{y_i}{\mu} \\
+^\dagger\mbox{Atkinson}_\varepsilon &=& 1 - \left[\frac{1}{N} \sum \left( \frac{y_i}{\mu} \right)^{1-\varepsilon} \right]^{\frac{1}{1-\varepsilon}}
+\end{eqnarray*}
+
+:::
+
+$^\dagger\varepsilon$ is a policy parameter that expresses society's degree of [inequality aversion]{.alert}
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+:::::
+
+<!-- multicolumn setup .................................................... -->
+### Measuring Inequality: [Gini]{.smallcaps} Coefficient
+
+<iframe src="https://ourworldindata.org/grapher/gini-index-around-2015-1990-2015-countries-vs-gini-index-around-1990-1990-2015-countries" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+<!-- multicolumn setup .................................................... -->
+### Long-Run Inequality: Top 1% Share
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<iframe src="https://ourworldindata.org/grapher/income-share-top-1-before-tax-wid-extrapolations?time=1910..latest&country=USA~CAN~GBR~ITA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+
+:::
+
+::: {.column width="50%"}
+
+<iframe src="https://ourworldindata.org/grapher/income-share-top-1-before-tax-wid-extrapolations?time=1910..latest&country=JPN~SWE~ESP~FRA~NLD" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+:::
+
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Inequality and Policy
+
+::::: {.panel-tabset}
+
+#### Redistribution
+* If SWF suggests that inequality is of policy concern, then redistribution, typically from the rich to the poor, is a possible choice
+* note: such redistribution does not tackle the causes of inequality, rather its symptoms
+* distribution of incomes $\{y_1,\ldots,y_N\}$
+* Budget-neutral redistribution: tax everyone using proportional income tax $\tau$, redistribute total tax revenue $\sum_i \tau y_i$ as a lump sum to everyone:
+$$
+\mbox{after-tax income } \tilde{y}_i = y_i(1-\tau)+\frac{\tau \sum_i  y_i}{N}
+$$
+* assume mean income does not change with redistribution (see notes)$^\dagger$
+
+::: {.callout-important icon="false" title="We shall show the effect of redistribution on $\Lambda$ graphically in class."}
+:::
+
+#### Illustration
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/lorenz3.png)
+
+:::
+
+::: {.column width="50%"}
+
+* redistribution shifts the $\Lambda$ curve towards the line of equality and reduces the [Gini]{.smallcaps}
+* [Atkinson]{.smallcaps} has shown that social welfare, as measured through any concave SWF, increases with such redistribution (see notes)$^\ddagger$
+
+:::
+
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### Notes
+
+* $^\dagger$ ideally, one should take into account behavioral effects of redistributional taxation, that is, redistribution may be associated with (possibly large) negative effects on labor supply and earnings; in that case, society "buys" more equality with "less efficiency" and lower mean income (see the equity/efficiency trade-off, and the Second Best)
+* $^\ddagger$ [Lorenz]{.smallcaps} curves such as $\Lambda$ and $\Lambda'$ curves might cross one another; in that case, it is unclear from those curves alone which distribution has more inequality
+
+:::::
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Linking Inequality and Welfare {background-color="#acfaf7"}
+
+
+### SWF and Incomes
+
+::::: {.panel-tabset}
+
+#### SWF
+
+
+```{=latex}
+\begin{itemize}
+\item
+        SWF typically written as 
+        $$W=W(\color{blue}{u^1},\color{red}{u^2}),$$
+        and $u^1(),u^2()$ are functions of consumptions, e.g.,
+        $\color{blue}{u^1}(x_1,x_2)$
+\item
+        however, at given income $y_1$ of individual 1,
+        consumption demands of that person for goods 1 and 2 are
+        $$x^1_1=x^1_1(p_1,p_2,y_1) \qquad \text{and} \qquad x^1_2=x^1_2(p_1,p_2,y_1)$$
+\item
+        then, at the optimal demands, \alert{indirect utility} is defined as
+        $$v^1(x^1_1(p_1,p_2,\color{blue}{y_1}),x^1_2(p_1,p_2,\color{blue}{y_1}))\equiv v^1(p_1,p_2,\color{blue}{y_1})$$
+\item
+        and so $W$ is a function of individual incomes
+        $$W=W(v^1(p_1,p_2,\color{blue}{y_1}),v^2(p_1,p_2,\color{red}{y_2})) = W(\color{blue}{y_1},\color{red}{y_2})$$
+\end{itemize}
+```
+
+#### Inequality
+
+```{=latex}
+\begin{itemize}
+\item
+        social welfare may increase with equality of incomes
+\item
+        consider utilitarian  SWF $W=u^1+u^2+\cdots = \sum_h u^h$ and rewrite as
+        \[
+        W=\sum v^h(y_h)
+        \]
+\item
+        equally distributed equivalent income $y_{ede}$:
+        \[
+        \sum_h v^h(y_h)
+        =\sum_h v^h(y_{ede})
+        \]
+\item
+        society is willing to give up $\pi = \mu - y_{ede}$ to eliminate inequality ($\pi$ inequality premium {\gray compare: risk premium})
+\item
+        suppose, all $v^h=v$ (identical): the more curved $v$, the stronger the effect of unequal incomes on welfare: \alert{inequality aversion} $\uparrow$
+\end{itemize}
+```
+
+::::: 
+
+### Inequality Aversion Illustrated
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=latex}
+\begin{itemize}
+\item
+        $E$: given distribution of incomes (endowment)
+\item
+        $Y_\mu$: distribution of incomes with same expected value
+\item
+        $y_{ede}$: equally distributed equivalent income
+\item
+        inequality premium $\pi = \mu - y_{ede}$
+\end{itemize}
+```
+
+:::
+
+::: {.column width="50%"}
+
+![](images/SWFineq.png)
+
+:::
+
+::::
+<!-- end multicolumn setup ................................................ -->
+
+
+### Link SWF and Welfare Indices
+
+::::: {.panel-tabset}
+
+#### Marginal SW Weight
+
+```{=latex}
+\begin{itemize}
+\item
+        compare two income distributions ${\cal A}$ and ${\cal B}$ with $\mu_{\cal A}=\mu_{\cal B}$, for which {$\Lambda({\cal A}) > \Lambda({\cal B})$} 
+\item
+        then, if \textsc{Lorenz} curves do not cross, ${\cal A}$ has higher welfare than ${\cal B}$ under every \alert{symmetric and concave} SWF
+        \begin{itemize}
+        \item
+                need not know SWF to say that social welfare is higher under ${\cal A}$
+        \end{itemize}
+\item
+        conversely, if \textsc{Lorenz} curves do cross, different rankings can be obtained
+        \begin{itemize}
+        \item
+                need to know SWF to say whether social welfare is higher under ${\cal A}$ or  under ${\cal B}$
+        \end{itemize}
+\end{itemize}
+```
+#### Intuition
+
+```{=latex}
+\begin{itemize}
+\item
+        income-based SWF: marginal social welfare weight $\omega_i = \partial W/\partial v^i\cdot\partial v^i/\partial y_i$ will be rewritten
+        $$\frac{\partial W}{\partial y_i}$$
+\item
+        for $y_1<y_2$, have 
+        $$\frac{\partial W}{\partial y_1}\ge \frac{\partial W}{\partial y_2}$$
+        i.e., a dollar extra for the poor counts more, because $W$ is assumed concave in incomes
+\item
+        transfer of 1\$ from rich to poor, makes society better off, $W\uparrow$        
+\end{itemize}
+```
+
+#### Gini and CV
+
+for SWFs based on utilities of income,
+
+::: {.callout-warning icon="false"}
+* any inequality measure implies a particular SWF
+* any SWF can be inverted to obtain an inequality measure
+:::
+
+![](images/SWF_Gini_CV.png){width="80%"}
+
+#### Atkinson
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-swf2 >}} width="420" height="550" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{=latex}
+\begin{itemize}
+\item
+        index
+        $$\mbox{Atkinson}_\varepsilon = 1 - \left[\frac{1}{N} \sum \left( \frac{y_i}{\mu} \right)^{1-\varepsilon} \right]^{\frac{1}{1-\varepsilon}}$$
+\item
+        SWF
+        $$W_{Atkinson}(y_1,\ldots,y_N)=\sum_i\frac{y_i^{1-\varepsilon}}{{1-\varepsilon}}$$
+\item
+        $\varepsilon$ degree of inequality aversion
+
+\end{itemize}
+```
+
+:::
+
+::::
+
+
+
+:::::
+
+
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Poverty {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Poverty
+
+::::: {.panel-tabset}
+
+#### Definition
+
+Poverty, specifically
+
+* lack of command over commodities
+     + "&hellip; a severe constriction of the choice set [over commodities]" ([Harold Watts]{.smallcaps})
+
+* Lack of specific consumptions in terms of quantity or quality 
+     + e.g. too little food energy intake, too little of specific nutrients, leaking roof, &hellip;
+
+Poverty, more generally
+
+* lack of "welfare" in wider sense
+     + e.g. lack of "capability": inability to achieve certain "functionings"
+     + "beings and doings" (Amartya [Sen]{.smallcaps})
+
+#### Aim of Measurement
+
+* supply evidence / quantitative data to inform policy on the extent, developments/trends, and severity of poverty
+* keep poor people on the political agenda
+
+####  Policies
+
+* Growth strategy
+     + Has poverty increased? Did growth help the poor? How did relative price changesaffect the poor? What is the impact of food price fluctuations? Who were the losers and who were the gainersfrom economy-wide policy reforms?
+* Social Spending
+     + Who uses public services? At what cost? Who benefits from government subsidies? On average, versus at the margin? Who will be hurt by retrenchment?
+* Targeted Interventions
+     + Who are the target groups? How should transfers be allocated? How much impact will they have on poverty?
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Canonical Poverty Measures
+
+::::: {.panel-tabset}
+
+#### Measures
+
+Canonical statistical measures of poverty (Poverty Indices, PI)
+
+* **headcount ratio** (HC): what percentage of population has income below poverty line?
+     + easy to measure and understand
+* **poverty gap** (PG): what is the average relative distance of the poor from the poverty line?
+     + reflects (average) depth of poverty
+* **squared PG** (SPG): what is the average relative squared distance of the poor from the poverty line?
+     + reflects severity of poverty, as it gives the highest weight to the poorest
+
+#### Graph
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-FGT >}} width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+::: {.column width="50%"}
+
+* the graph shows the three canonical measures
+* for a mathematical expression check the Math tab
+
+::: {.callout-tip title="Get the hang of poverty measures!" icon="false"}
+* shift the poverty line to see how poverty measures change
+* click the links to see the implicit weighting scheme 
+:::
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### FGT: Math
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+The [Foster-Greer-Thorbecke]{.smallcaps} (FGT) index captures all three PIs
+$$
+FGT_{\alpha }={\frac {1}{N}}\sum _{i=1}^{H}\left({\frac {z-y_{i}}{z}}\right)^{\alpha }
+$$
+
+* $y_i$ individual income, $i=1,\ldots,N$
+* $z$ poverty line
+* $N$ number of people
+* $H$ number of poor (incomes below $z$)
+* $\alpha$: definitional parameter, $\in \{0,1,2\}$
+:::
+
+::: {.column width="50%"}
+
+* $\alpha=0$: HC: $\displaystyle FGT_{0} = \frac{H}{N}$ 
+* $\alpha=1$: PG: $\displaystyle FGT_{1} = {\frac {1}{N}}\sum _{i=1}^{H}\left({\frac {z-y_{i}}{z}}\right) = FGT_{0} \cdot \bar{y}_p$
+    + $\bar{y}_p$ avg income of the poor
+* $\alpha=2$: SPG: $\displaystyle FGT_{2} = {\frac {1}{N}}\sum _{i=1}^{H}\left({\frac {z-y_{i}}{z}}\right)^{2}$
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+:::::
+
+
+### Axiomatic Poverty Indices
+
+* problem: ad-hoc measures may fail to detect poverty or overemphasize it
+* [Sen]{.smallcaps}'s concept: starts from desirable properties of poverty measures
+    + anonymity: identity of household does not matter
+    + weak transfer axiom: poverty decreases with redistribution among the poor
+    + monotonicity: poverty declines with rising income of the poor
+    + focus axiom: redistribution among the non-poor does not change poverty
+
+* [Sen]{.smallcaps}'s index: combination of measures
+$${\cal I}_{Sen} = HC \left[ IGR + (1-IGR) G^P \frac{H}{H+1} \right]$$
+    + $IGR$: income gap ratio $\displaystyle IGR = \frac{PG/H}{z}$
+    +  $G^P$: [Gini]{.smallcaps} among the poor
+
+
+### Poverty Relief Measures and Consumer Choice
+
+::::: {.panel-tabset}
+
+#### Tools {.smaller}
+
+* transfers are used to address poverty to targeted and identified individuals
+     + in cash or in kind
+* cash transfers can be used to 
+     + move individuals back to the poverty line in terms of disposable income
+          + e.g., in inflationary periods
+     + counteract a price hike on specific goods
+          + e.g., using the idea of **compensating variation**
+* in-kind transfers for particular expenditure categories (necessitities)
+     + e.g., social/council housing; food stamps/coupons/special debit cards; reduced public transport fares; access to health services
+     + in-kind transfers reduce the choice set
+
+#### In-Kind
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/inkind.png)
+
+:::
+
+
+::: {.column width="50%"}
+
+* in-kind benefit is tied to consumption of good $x_1$
+* it cannot be (directly) exchanged for good $x_2$
+     + there is a kink at $E_2$ on the red BC
+     + individual might choose to consume at the kink
+* cash benefit is fully fungible (grey BC), there is no kink, and it might afford higher utility at $E_3$
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+#### CV
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* recall that compensating variation restores welfare to the level of utility that was obtained before the price hike
+* this involves a money transfer to recipients
+* the size of the transfer is meant not to make recipients better off than they had been before the price hike
+* instead it corresponds to the cheapest compensation from the point of view of the government that leaves the recipient indifferent to experiencing and not experiencing the price hike
+
+:::
+
+::: {.column width="50%"}
+
+:::::: {.panel-tabset}
+
+##### 1
+![](images/shec_compvar_Page_04.png){.lightbox}
+
+##### 2
+![](images/shec_compvar_Page_05.png){.lightbox}
+
+##### 3
+![](images/shec_compvar_Page_06.png){.lightbox}
+
+##### 4
+![](images/shec_compvar_Page_07.png){.lightbox}
+
+##### 5
+![](images/shec_compvar_Page_08.png){.lightbox}
+
+::::::
+
+**Example** Recipient Jake and mayor Tom (click pic to pop out)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+:::::
+
+
+
+
+
+### Anti-Poverty Policy and Labor Supply
+
+::::: {.panel-tabset}
+
+#### Tools {.smaller}
+
+* citizens need to be encouraged to earn their own income and be self-reliant
+* enabling people to earn a living wage is part of the objective
+
+We look at the following policy tools:
+
+* minimum wage (floor on hourly wages, irrespective of skill level or experience)
+* unconditional basic income (lump-sum payment to all, no strings attached)
+    + similar: (flat-rate) social security (SS) in old age (NL: unrelated to work history)
+* means-tested benefits (benefits exceeding own earnings up to the poverty line)
+* earned-income tax credit (targeted wage subsidy, turning stepwise into tax)
+
+::: {.callout-warning title="Policy can have unintended consequences (e.g., through perverse incentives)"}
+:::
+
+#### Minimum Wage
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-labor >}} width="500" height="500" style="border: 1px solid #ccc" ></iframe>
+```
+
+:::
+
+
+::: {.column width="50%"}
+
+* minimum wage has, as any other wage rate $w$ change two effects on labor supply
+     + an income effect
+     + a substitution effect
+* there is the possibility that at some level of $w$ labor supply decreases       
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+#### UBI
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/UBI.png){width=400}
+
+:::
+
+
+::: {.column width="50%"}
+
+* Universal Basic Income is an unconditional fixed benefit
+     + possibily while removing all other conditional transfers
+* UBI shifts the budget constraint up
+     + there may be income effects on labor supply, whose sign depends on indifference curve
+     + no substitution effects
+* in reality: UBI is almost never truly universal, but there are only few experiments (e.g. Finland)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+#### SS
+
+![](images/armoedesignalement.png){width=70%}
+
+::: {style="font-size: 60%;"}
+*source:* SCP, Armoedesignalement, 2013 
+:::
+
+#### Means Test
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/meanstest.png)
+
+:::
+
+
+::: {.column width="50%"}
+
+* benefit $b$ should bring the individual to the poverty line $y_{\min}$
+* but will be cut accordingly as recipient's own means (earnings, wealth) rise
+* implies an implicit tax rate of 100%
+     + note the 2 kinks in the BC, expecially at $E_2$ where people might stick
+     + raises the possibility of induced non-participation, and subsequently a poverty trap (work does not pay enough)
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+
+
+#### EITC
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+
+::: {.column width="50%"}
+
+* Earned income tax credit has three phases
+1. phase-in: wage subsidy increases $w$
+2. flat part: wage subsidy ceased
+3. phase-out: wage tax decreases $w$
+
+![](images/saez_eitc.png){width="75%"}
+
+:::
+
+::: {.column width="50%"}
+
+![](images/EITC.png){width="75%"}
+
+* 3 kinks, first one is most salient
+* keeps incentive to work at small number of hours
+
+:::
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+
+:::::
+
+### Layered Welfare Programs and Implicit Taxes
+
+::::: {.panel-tabset}
+
+#### Overview
+
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Integrated welfare systems 
+    + tax labor income (possibly progressively) and 
+    + pay targeted, conditional, or means-tested benefits in different types of programs
+* means tests and program qualification thresholds may imply that recipients fall out of a program altogether
+* this can imply implicit marginal tax rates of $\gg 100\%$, or *notches* in the BC
+* tabs: examples from US, Sweden and NL
+
+:::
+
+::: {.column width="50%"}
+
+![Notches](images/notches.png)
+
+:::
+
+::::
+
+#### US
+
+![](images/maagntj2012.png){width="80%"}
+
+
+::: {style="font-size: 60%;"}
+*source:* Maag et al., *Nat. Tax Jrnl.*, 2012 
+:::
+
+#### SE
+
+![](images/liang2011.png){width=70%}
+
+::: {style="font-size: 60%;"}
+*source:* Liang, *J Pub Ec*, 2012
+:::
+
+
+#### NL
+
+![](images/CPBmtaxrate2016.png){width="90%"}
+
+::: {style="font-size: 60%;"}
+*source:* [CPB (2015)](https://www.cpb.nl/sites/default/files/publicaties/download/cpb-achtergronddocument-26apr2015-marginale-druk-en-participatie-belasting-huishoudtype-2015.pdf){.external target="_blank"}
+
+:::
+
+
+
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+## Summary and Conclusions {background-color="#acfaf7" .unnumbered}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Summary
+
+* [Lorenz]{.smallcaps} curve and [Gini]{.smallcaps} coefficient as standard statistical measure for inequality assessment
+    + there are many others, all with their own properties (e.g. [Theil]{.smallcaps} or [Atkinson]{.smallcaps} indices)
+    + in practice, descriptive measures showing inequality through the top-1% share or 90/10 ratio are popular
+* redistribution is welfare-enhancing under a convex SWF, and can be achieved using a simple budget-neutral tax-benefit system (assuming no behavioral response)
+    + to some degree, there is a link between inequality and SWF
+* poverty measurements are often tied to distributional aspects (relative poverty)
+* poverty policy aims at providing a consumption floor
+* benefit design can dis-/encourage labor supply (participation)
+* in-kind provision: targeting and self-selection of the needy
+* unintended side effect of means testing: discourage effort taking
+
+
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+### Prerequisites and Resources
+
+#### Prerequisites
+
+before watching this video, users should be familiar with the following concepts
+
+* Marginal rate of substitution
+* [Pareto]{.smallcaps} improvements and [Pareto]{.smallcaps} efficiency in an exchange economy
+* [Edgeworth(-Bowley)]{.smallcaps} box and contract curve
+* First Theorem of Welfare Economics
+* [Bergson-Samuelson]{.smallcaps} social welfare function
+
+#### Resources and recommended reading
+
+Varian and Melitz, Intermediate Microeconomics, 10th ed., W.W. Norton:
+chs. 14, 32, 33
+
+Hindriks and Myles, Intermediate Public Economics, 2nd ed., MIT Press: chs. 2, 13
+
+Diagrams in this Set of Slide Decks: `https://edu.nl/bybqa`
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Recap: Exchange & Consumption Efficiency
+
+* [Edgeworth]{.smallcaps} box: two consumer $(A,B)$/two goods $(x,y)$ exchange model with endowment point $E$
+* [Pareto]{.smallcaps} efficiency:  equalization of *marginal rates of substitution* (MRS) between both consumers:
+$$
+MRS_A(x,y) = MRS_B(x,y)
+$${#eq-MRSA_MRSB}
+
+#### Contract Curve
+
+* locus of allocations that fulfills (@eq-MRSA_MRSB)
+
+#### Core
+
+* segment of contract curve reachable from $E$
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Recap: First Theorem of Welfare Economics
+
+<br>
+
+::: {.callout-caution title="First Theorem of Welfare Economics" icon="false"}
+Under strict conditions, a competitive market equilibrium is [Pareto]{.smallcaps}  efficient.
+::: 
+
+* i.o.w.: market clearing $\implies$ efficiency
+
+* in the [Edgeworth]{.smallcaps} Box, this implies:
+    + starting from endowment $E$, market interaction and market clearing lead to equilibrium market prices that make agents pick allocation $M$
+    + 1st Theorem implies: $M$ is on the contract curve (in the core) and thus [Pareto]{.smallcaps} efficient 
+    + $M$ can always be reached from $E$
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Utility Possibilities Frontier (UPF)
+
+* we now ask: what are the highest *level* of utilities that individuals can achieve in a 2-person economy with *given resources* or endowments?
+* i.o.w.: how much utility can we get out of our endowment of consumption goods, at most, if we are willing to redistribute between agents?
+     + increasing consumption (and, hence, utility) of $A$, given [Pareto]{.smallcaps} efficiency, is associated with a decrease in consumption  (and, hence, utility) of $B$
+* this linkage gives rise to the *utility possibilities frontier* (UPF)
+     + UPF shows the maximum attainable level of utility for all members of society
+     + analysis is: given $u_A$, what is $\max u_B$? (or converse)
+* then, UPF corresponds to [Pareto]{.smallcaps} efficient allocations on contract curve when we consider the levels of utility
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Recap: Social Welfare Function (SWF)
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* SWF: society's 'utility' function
+* [Bergson-Samuelson]{.smallcaps} SWF is purely based on individual utilities
+$$ W=W(u_A,u_B)$$
+* social decisions involve trade-off across groups or individuals<br>
+     + *interpersonal comparability* of utilities necessary when redistributing
+     + utility functions are *cardinal* since utility changes will matter
+* curvature of SWF reflects *inequality aversion*, $\varepsilon$
+
+::: {style="font-size: 75%;"}
+
+```{=latex}
+\begin{tabular}{cccc}
+named~after: & \textsc{Rawls} & \textsc{Nash} & \textsc{Bentham} \\
+example: & $W=\min\{u_A,u_B\}$ & $W=u_A\cdot u_B$ & $W=u_A+u_B$  \\
+ineq.~aversion: & $\varepsilon\to\infty$ & $0<\varepsilon<\infty$ & $\varepsilon= 0$
+\end{tabular}
+```
+:::
+
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+```{=html}
+<iframe src={{< var desmos-fig-swf2 >}} width="600" height="600" style="border: 1px solid #ccc" ></iframe>
+```
+
+#### First Best
+
+* combining SWF and UPF allows determining the *First Best* social choice, $F$
+* technically, UPF acts as a constraint on SWF
+
+:::
+
+::::
+<!-- END OF multicolumn setup ............................................. -->
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Second Theorem of Welfare Economics
+
+* markets in themselves may generate inequality as a side-effect
+* 1st Theorem: market equilibrium is [Pareto]{.smallcaps}  efficient; it is silent on equity
+     + how about we redistribute when market outcomes not 'fair' or 'too unequal'
+
+::: {.callout-caution title="Second Theorem of Welfare Economics" icon="false"}
+
+*Any* [Pareto]{.smallcaps}  efficient outcome can be *decentralized* as a competitive equilibrium, for some distribution of initial endowments.
+
+::: 
+
+* i.o.w.: market clearing $\impliedby$ efficiency
+     + distribution function as additional role of government
+
+::: {.callout-caution title="Separability" icon="false"}
+
+* when first best is achievable, equity and efficiency are, in fact, *separable*
+* needs initial, non-distortionary *lump-sum* taxes and transfers before market interaction starts
+
+::: 
+
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Social Optimality: First Best versus Second Best
+
+:::{.center-h}
+```{=html}
+<iframe src={{< var sbe_ebe_canon_1_pubec >}} width="1600" height="820" style="border: 1px solid #ccc" ></iframe>
+```
+:::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Lump Sum Redistribution
+
+:::{.center-h}
+![](images/2FTWE_upf.png){width=85%}
+:::
+
+::: {style="font-size: 85%;"}
+* lump-sum taxes and transfers are tied to the identity of the tax payer or transfer recipient, but not to individual's choices (e.g.: income,  consumption, wealth) and can therefore not be influenced
+:::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Second Best: Motivation
+
+Consider a redistribution program that takes from the rich and gives to the poor.
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="60%"}
+
+> <q> [&hellip;] the money must be carried from the rich to the poor in a leaky bucket.  Some of it will simply disappear in transit, so the poor will not receive 
+all the money that is taken from the rich. [&hellip;]
+> I want you to decide how much leakage you would accept and still support [this plan]. Suppose 10 percent leaks out [&hellip;] Should society still make the switch? If 50 percent leaks out? 75 percent? [&hellip;] Where would you draw the line? Your answer cannot be right or wrong. [&hellip;]
+>Of course, the leak represents an inefficiency. The inefficiencies of real-world redistribution include the adverse effects on the economic incentives of the rich and the poor, and the administrative costs of tax-collection and transfer programs.
+
+<br>
+$\qquad\qquad\qquad$ [Arthur M. Okun]{.smallcaps}, 1975, <br>
+$\qquad\qquad\qquad$ *Equality and Efficiency: The Big Tradeoff.*
+
+:::
+
+::: {.column width="40%"}
+
+![](images/leakybucket.jpg){width=85%}
+
+:::
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Second Best
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* lump-sum implies no behavioral substitution response 
+* in reality, howver, all taxes and transfers are distortionary
+
+* illustration: redistribution implies efficiency losses that shift UPF inwards
+* *Second Best*, $S$: maximize social welfare subject to the constraint that efficiency losses are unavoidable
+
+* trade-off: equity $\uparrow$ $\Rightarrow$ redistribution $\uparrow$ $\Rightarrow$  taxes $\uparrow$ $\Rightarrow$  welfare costs $\uparrow$
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/2ndBest.png){width=65%}
+
+:::
+
+::::
+
+<!-- END multicolumn setup ................................................ -->
+
+::: {style="font-size: 85%;"}
+
+::: {.callout-caution title="Non-Separability and the Fundamental Equity/Efficiency Trade-off" icon="false"} 
+* in a second-best world, equity and efficiency are non-separable
+* i.e., distortionary redistribution means giving up efficiency to achieve higher equity
+::: 
+
+::: 
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Summary
+
+* [Pareto]{.smallcaps} efficiency is a key concept for societal welfare
+     + it embodies the exhaustion of gains from trade through voluntary action
+     + to achieve it, one can rely on competitive markets (1st Theorem)
+
+<br>
+
+* [Pareto]{.smallcaps} efficiency does not account for inequality concerns
+* The social welfare function does allow to reflect inequality aversion
+* The first-best social choice combines the quest for efficiency with views on equity
+* To achieve the first best, lump-sum taxes and transfers may be needed (2nd Theorem)
+
+<br>
+
+* distortionary taxation allows at most second best social choice (efficiency-equity tradeoff)

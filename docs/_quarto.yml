@@ -1,0 +1,55 @@
+#title: "SBE EBE Canon Public Economics"
+#subtitle: "BSc Economics and Business Economics"
+#author: 
+#  - name: "Stefan Hochguertel"
+#    email: s.hochguertel@vu.nl
+#    affiliations: Vrije Universiteit Amsterdam
+project:
+  type: website
+  title: "SBE EBE Canon PubEc"
+  output-dir: docs
+language:
+  en:
+    crossref-tip-title:  "Exercise"
+    crossref-tip-prefix: "Exercise"
+    crossref-nte-title:  "Remark"
+    crossref-nte-prefix: "Remark"
+    crossref-cau-title:  "Example"
+    crossref-cau-prefix: "Example"
+    crossref-wrn-title:  "Definition"
+    crossref-wrn-prefix: "Definition"
+    crossref-imp-title:  "Important Point"
+    crossref-imp-prefix: "Important Point"
+format:
+  #clean-revealjs:
+  revealjs:
+    theme: [styles.scss]
+    width: 90%
+    height: 1000
+    embed-resources: false # must be false for desmos pics to work
+    self-contained-math: true    
+    link-external-icon: true
+    slide-number: true
+    sc-sb-title: false
+    subtitle-as-header: false
+    preview-links: auto
+    smaller: false
+    crossref:
+      eq-prefix: ""
+      eq-labels: arabic
+#include-in-header:
+#  - text: |
+#      <style>
+#      #title-slide .title {
+#        font-size: 2.5em;
+#        font-weight: normal;
+#        color: $VUblue;
+#      }
+#      </style>
+filters: 
+  - parse-latex-noeq
+  - mathjax3eqno
+  - reveal-header
+slide-level: 3
+number-sections: true
+number-depth: 2

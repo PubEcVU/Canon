@@ -1,0 +1,50 @@
+/*-- scss:defaults --*/
+
+$VUblue: #0077B3;
+$presentation-h1-font-size:	2.5em;
+$presentation-h2-font-size:	1.8em;
+$presentation-h3-font-size:	1.4em;
+$presentation-h4-font-size:	1em;
+$presentation-title-slide-text-align: left;
+
+$presentation-heading-font: "Din Pro", sans-serif;
+$font-family-sans-serif: "Din Pro", sans-serif;
+$font-family-monospace: "Source Code Pro", monospace;
+$presentation-heading-color: $VUblue;
+$presentation-heading-font-weight: normal;
+$link-color:  $VUblue;
+
+.reveal .title-slide .title {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: $VUblue;
+}
+
+
+.reveal .panel-tabset-tabby a {
+  color: $VUblue;
+/* font-size: 1.5em; */
+}
+
+.reveal ul li::marker {
+  color: $VUblue;
+}
+
+.reveal ul ul li::marker {
+  color: $VUblue;
+}
+
+
+.reveal .callout {
+  font-size: 1.0em !important; // Scales relative to base font
+  // Or specific sizes:
+  .callout-title { font-size: 1.0em !important; }
+  .callout-body { font-size: 1.0em !important; }
+}
+
+
+/*-- scss:rules --*/
+
+.reveal section div.center-h {
+	text-align: center;
+}

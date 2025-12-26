@@ -1,0 +1,284 @@
+# Income Tax  {background-color="#049baa"}
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Labor Supply and Taxes {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Introduction
+
+* income tax major source of gov't revenue
+* income sources: labor earnings and capital income
+* income tax often integrated with social benefits
+* income tax main tool for redistribution; in particular: progressive tax on earnings
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Income & Substitution Effects of Wage Change
+
+::::: {.panel-tabset}
+
+#### Wage Change
+
+* What happens to your labor supply when you get a pay rise (wage rate $w\uparrow$)?
+* note: you **own** your time that you can allocate to leisure or to work, so $w\uparrow$ makes value of time endowment more valuable 
+* $w\uparrow$: budget constraint rotates outward        
+* could do: work more because leisure got more expensive (substitution effect), or less because time got worth more (income effect)
+* Depends on which effect dominates empirically. 
+
+#### IE & SE
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<iframe src="https://www.desmos.com/calculator/mduitxmsrt?embed" style="width: 500px; height: 500px"></iframe>
+
+::: 
+
+::: {.column width="50%" style="font-size: 75%"}
+
+*click on walkthrough for the following:*
+
+1. starting from an optimal choice \textcolor{red}{$\star$}, 
+2. an increase in the wage rate, $w\uparrow$ leads to a rightward rotation of the budget constraint around the time endowment point $H$ (max hours worked)
+3. a negative compensation payment shifts the budget constraint back to the original (red) indifference curve, point \textcolor{red}{$\circ$}
+
+The substitution effect on leisure \textcolor{red}{$\star$}$\to$\textcolor{red}{$\circ$}, due to opportunity cost of leisure rising, is always $\le 0$
+
+4. if income effect \textcolor{red}{$\circ$}$\to$\textcolor{blue}{$\bullet$} on leisure $>0$, indivdual may work less (total effect on leisure possibly positive)
+5. if it is negative, more (total effect on leisure negative)
+
+
+::: 
+
+::::
+<!-- END multicolumn setup ................................................ -->
+ 
+:::::
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Nonlinear Budget Constraints
+
+* taxes on earnings can be studied in a simple labor supply model
+* \textcolor{lightgray}{compare: welfare benefits}
+* disincentive effects on labor supply, depending on (compensated) elasticities
+* due to progressive taxes and tax credits/allowances, real-world budget restrictions are typically nonlinear
+* nondifferentiability and nonconvexities:<br> corners, kinks, holes, jumps and bunching
+* choices may not be unique
+* small tax changes changes can lead to large responses
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Nonlinear Budget Constraint and Labor Supply
+
+* consider standard model of labor supply (with time endowment $H$)
+    + lump sum tax (amount $T_L$)
+    + proportional (flat) income tax at rate $t$
+    + progressive income tax with 2 brackets at rates $t_1=0$, $t_2>t$
+        - leads to nonlinear (kinked) budget constraint at earnings level $w\cdot h_1$
+* holding after-tax welfare levels constant<br>  denote:    
+* after-tax wage earnings
+    + $w \cdot h - T_L$
+    + $(1-t) \cdot w \cdot h$
+    + $w \cdot h_1 + (1-t_2) \cdot w [h-h_1]$
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Revenue & Excess Burdens in Comparison
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<iframe src="https://www.desmos.com/calculator/aylnkcc8lr?embed" style="width: 500px; height: 500px"></iframe>
+
+::: 
+
+::: {.column width="50%" style="font-size: 75%"}
+
+*click on walkthrough for the following:*
+
+1. starting from an optimal choice \textcolor{blue}{$\star$}, 
+2. progressive tax leads to a downward rotation of the budget constraint around the lower limit of the second tax bracket (earnings $w \cdot h_1$), and choice \textcolor{red}{$\bullet$}
+3. green line indicates tax revenue (equals \textcolor{red}{$\bullet$}--\textcolor{blue}{$\bullet$})
+4. non-distortionary tax (blue dashed line) would have led to choice \textcolor{red}{$\circ$}
+5. and to higher tax revenue (orange line; equals \textcolor{red}{$\circ$}--\textcolor{blue}{$\circ$})
+
+* excess burden (related to the substitution effect) equal to the difference between orange and green tax revenues
+
+6. flat tax at constant rate $t$ (pink line) leads to choice \textcolor{pink}{$\star$}
+7. with intermediate level of tax revenue (vertical pink line; equals \textcolor{pink}{$\star$}--\textcolor{blue}{$\star$}) and excess burden
+
+::: 
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Flat Tax and Redistribution
+
+* progressive systems are a good redistributional tool
+* but also have large welfare losses (excess burdens)
+* flat tax may seem to redistribute less
+* however, overall progressivity of the tax-and-benefit system matters
+* i.e., with a flat tax and benefits targeted at the poor, redistributional goals can be achieved
+* also likely to limit welfare losses
+* administrative simplicity and transparency
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Optimal Income Taxation {background-color="#acfaf7"}
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Incentive Compatible Income Tax Design
+
+::::: {.panel-tabset}
+
+#### Idea
+
+* suppose differences in labor incomes are due to differences in productivity, which ultimately are due to differences in talents
+* first best: (lump-sum) tax based on talents or skills / endowment of innate abilities
+* [Mirrlees]{.smallcaps}: assume talents are unobservable to the gov't
+* incentive for the smart guys to pretend they're not (and thus pay lower taxes)  
+* second best solution: max social welfare subject to balanced budget, and taking into account incentives to reveal one's talent
+
+#### Setup I
+
+* consider 2 types of agents (\textcolor{red}{$h$},\textcolor{blue}{$\ell$}): high and low ability
+* asymmetric info: gov't cannot tell whether an individual is \textcolor{red}{$h$} or \textcolor{blue}{$\ell$}
+* main issue: \textcolor{red}{$h$} worker may pretend to be \textcolor{blue}{$\ell$} to pay lower taxes (but \textcolor{blue}{$\ell$} will not pretend to be \textcolor{red}{$h$} because lower skills make earning higher income very costly)
+
+#### Setup II
+
+picture:
+
+* 2 dimensions: before-tax income and after-tax consumption on axes
+    + note: horizontal axes (gross earnings: $w\cdot h$) differs from consumption-labor supply diagram (leisure: $H-h$)
+* **agent monotonicity**: for a given combination of before-tax income and consumption, \textcolor{red}{$h$} have flatter indifference curves because it takes them lower effort cost to generate a given level of income than \textcolor{blue}{$\ell$}
+* tax function: vertical distance from 45$^\circ$-line reflects tax payment; slope = marginal tax rate
+    + note: both agents must face the same tax function
+
+#### Setup III
+
+* design problem: how to optimally set marginal tax rates so that social welfare is maximized, and incomes can be redistributed, without giving \textcolor{red}{$h$} incentive to masquerade as \textcolor{blue}{$\ell$}?
+* marginal tax rate cannot exceed 100%, because with convex indifference curves noone would choose to be on a downward sloping segment of a tax function
+* marginal tax rate cannot be $<0$ as SWF-improvement possible
+* marginal tax rate cannot be $\neq 0$ for \textcolor{red}{$h$}
+
+#### Video
+
+![](images/optinctax.mp4){width="80%"}
+
+
+#### Findings
+
+* if talents determine wages, then highest parts of wage income should optimally be taxed at marginal rate zero
+* this maximizes social welfare with a balanced budget
+
+\bigskip
+
+* result: self-selection
+    + it incentivizes highest skill level workers to display maximal effort
+    + low skill workers would find this level of effort provision too costly
+
+\bigskip
+
+* note: this does not mean 
+    + the marginal tax rate should be zero everywhere
+    + the average tax rate should be zero
+* yet, counterintuitive and not observed in practice
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+### Additional Remarks
+
+::::: {.panel-tabset}
+
+#### Design Literature
+
+* [Mirrlees]{.smallcaps} (1971) result helped establish new literature on asymmetric information, incentives, and mechanism design
+* important example of ''no-distortion-at-the-top'' principle
+* designing correct incentive structure has many other applications in economics
+* for actual tax design of limited practical importance, however
+
+#### Median Voter Results
+
+* in political process, tax rates are endogenous (chosen)
+* with a simple flat tax system with lump-sum transfers, the poorer stand to gain and the richer stand to lose  from redistribution
+* if median voter is relatively poor, redistribution will result through choosing high tax rates
+* in real-world income distributions median$<$mean
+* [Piketty]{.smallcaps}: 'utimately, the poor always win' 
+
+:::::
+
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+## Savings and Taxes {background-color="#acfaf7"}
+
+### Savings and Capital Income
+
+::::: {.panel-tabset}
+
+#### Capital income
+
+* under personal income tax laws, consumers pay tax on capital income received
+* this may come in various forms, e.g.:
+* dividends (firm's profits received by shareholders)
+* rent (lease) received
+* capital gains (change of wealth due to asset price changes)
+    + realized capital gains: difference between price when actually sold and price when actually bought [US]
+    + unrealized capital gains: difference between valuation at time $t$ and at time $t-1$ (sold or not)
+* interest receipts on savings
+    + possibly minus interest payments on debt
+
+#### NL
+
++ tax on savings and investment ('box 3'): 
++ until 2016: 30% on fictitious return of 4% (=1.2% on wealth)
++ after 2016: progressive (still fictitious)
++ 2021: Supreme Court ruling demands taxation of actual returns (to be implemented by 2027+)
+
+#### Illustration
+
+
+<!-- multicolumn setup .................................................... -->
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<iframe src="https://www.desmos.com/calculator/0tley4tchk?embed" style="width: 500px; height: 500px"></iframe>
+
+::: 
+
+::: {.column width="50%" style="font-size: 75%"}
+
+*click on walkthrough for the following:*
+
+1. starting from intertemporal distribution of income endowment $Y$, intertemporal budget contraint of slope $-(1+r)$
+2. consumption smoothing leads to choice $C$ and implies saving or borrowing, depending on relative position between $Y$ and $C$
+2. symmetric taxation of interest income at rate $t$ leads to net-of-tax returns $(1+r(1-t))$ (orange line)
+3. and a new consumption choice
+4. asymmetric taxation of interest income: most common case: no interest payment deductibility from income tax, while interest income is taxed (differential treatment saving/borrowing)
+5. result of asymmetry depends on whether taxpayer is saver or borrower
+
+::: 
+
+::::
+<!-- END multicolumn setup ................................................ -->
+
+:::::
+
+
+<!-- ** NEW SLIDE ********************************************************* -->
+
+## Conclusions and Summary {.unnumbered background-color="#acfaf7"}
+
+### Summary
+
+* earnings taxes have both substitution and income effects, but smaller DWL under flat tax
+* progressive income tax often used for stronger redistributional aims
+* but even under flat tax, redistribution is possible
+* optimal income tax: no-distortion-at-the-top suggests zero top marginal rate
+* capital taxation on savings/interest for consumers may have both substitution and income effects, and can affect consumer wealth accumulation dynamically
